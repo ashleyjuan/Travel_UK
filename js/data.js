@@ -3,15 +3,22 @@
 window.TRIP = {
   days: [
     {
-      id: 'd1', date: '9/7', weekday: '週一', title: '啟程：台北 → 倫敦',
-      theme: '✈️ 移動日',
-      transport: '桃園機場 TPE 出發（直飛約 14 小時／轉機 17–21 小時）→ 希斯洛 LHR。入境後搭 Elizabeth Line（約 £13.9–15.5，30 分鐘到 Paddington）或 Piccadilly Line（£5.9，約 55 分鐘）進市區。',
+      id: 'd1', date: '9/7', weekday: '週一', title: '啟程：台北 → 倫敦（中午抵達，多賺半天！）',
+      theme: '✈️ 阿聯酋 EK・經杜拜',
+      transport: '推薦航班：阿聯酋航空 9/7 凌晨 00:30 TPE 起飛 → 杜拜轉機 2h45 → 當天中午 12:35 抵達蓋威克 LGW。進市區搭 Thameslink（約 £15，30–45 分鐘）或 Gatwick Express（£21.3 直達 Victoria）。',
       spots: [
-        { time: '上午', name: '桃園機場出發', en: 'TPE Departure', desc: '提前 3 小時到機場。直飛（長榮/華航）或轉機（國泰經香港、土航經伊斯坦堡等）。記得出發前 3 天以上完成 UK ETA 申請（£20）。', map: 'Taoyuan International Airport' },
-        { time: '傍晚', name: '抵達希斯洛機場', en: 'London Heathrow (LHR)', desc: '入境走 eGate（台灣護照適用）。建議先在機場地鐵站用感應信用卡或 Apple Pay 直接進站——倫敦交通不需要買 Oyster 卡。', duration: '入境+進市區約 1.5–2 小時', map: 'Heathrow Airport, London' },
-        { time: '晚上', name: '飯店 Check-in・附近晚餐', en: 'Hotel Check-in', desc: '建議住宿區域：Paddington／South Kensington／King’s Cross（交通樞紐、治安好）。晚餐在飯店附近簡單解決，調時差早點休息。', tips: '超市 Tesco / Sainsbury’s / M&S 的即食餐是省錢好夥伴' },
+        { time: '9/6 晚', name: '桃園機場報到（注意：前一晚！）', en: 'TPE Check-in', desc: '凌晨 00:30 起飛 = 9/6（日）晚上 21:30 前就要到機場報到，別搞錯日期！出發前 3 天以上完成 UK ETA 申請（£20）。', map: 'Taoyuan International Airport' },
+        { time: '00:30', name: '起飛 → 杜拜轉機', en: 'TPE → DXB → LGW', desc: '第一段約 9.5 小時，正好睡覺；杜拜轉機 2h45 不趕不拖，逛一下全球最大機場免稅店再上第二段（約 8 小時）。', duration: '總程 19 小時 5 分' },
+        { time: '12:35', name: '抵達倫敦蓋威克機場', en: 'London Gatwick (LGW)', desc: '入境走 eGate（台灣護照適用）。搭 Thameslink 進市區，感應信用卡或 Apple Pay 直接拍卡進站——不用買 Oyster 卡。', duration: '入境+進市區約 1.5 小時', map: 'Gatwick Airport' },
+        { time: '15:00', name: '飯店 Check-in', en: 'Hotel Check-in', desc: '建議住宿區域：Paddington／South Kensington／King’s Cross（交通樞紐、治安好）。放好行李稍作休息。', tips: '超市 Tesco / Sainsbury’s / M&S 的即食餐是省錢好夥伴' },
+        { time: '16:30', name: '南岸暖身散步・倫敦眼', en: 'South Bank & London Eye', desc: '中午就到的福利！沿泰晤士河南岸從倫敦眼散步到西敏橋，傍晚金色時刻拍大笨鐘，先把地標「預習」一遍。想搭倫敦眼可線上購票（£29 起）。', price: '散步免費／倫敦眼 £29 起', duration: '2 小時', tube: 'Waterloo', book: { label: '倫敦眼購票', url: 'https://www.londoneye.com/tickets-and-prices/' }, map: 'London Eye, South Bank, London' },
+        { time: '19:00', name: '晚餐後早點休息', en: 'Early Night', desc: '時差調整關鍵日：撐到當地 21:00 再睡，隔天就能滿血開始正式行程。', tips: '南岸的 Wahaca 或飯店附近酒館簡單吃' },
       ],
-      dayTips: ['行前必辦：UK ETA（官方 App 申請，£20，效期 2 年）', '英國插座為三孔 BS1363（G 型），記得帶轉接頭', '9 月倫敦約 11–19°C，早晚涼，帶薄外套 + 摺疊傘'],
+      rainNote: '下午的南岸散步遇雨改成：',
+      rainSpots: [
+        { time: '16:30', name: '柯芬園（有頂棚）暖身逛', en: 'Covent Garden', desc: '玻璃頂棚市集不怕雨，Apple Market、街頭藝人、周邊小店先感受倫敦氛圍，晚餐在 Seven Dials Market 室內美食街解決。', price: '免費', duration: '2.5 小時', tube: 'Covent Garden', map: 'Covent Garden Market, London' },
+      ],
+      dayTips: ['行前必辦：UK ETA（官方 App 申請，£20，效期 2 年）', '英國插座為三孔 BS1363（G 型），記得帶轉接頭', '9 月倫敦約 11–19°C，早晚涼，帶薄外套 + 摺疊傘', '若最終訂的是其他航班（傍晚抵達版），下午行程直接略過即可'],
     },
     {
       id: 'd2', date: '9/8', weekday: '週二', title: '西敏經典：國會大廈・衛兵交接・國家美術館',
@@ -150,13 +157,13 @@ window.TRIP = {
     {
       id: 'd9', date: '9/15', weekday: '週二', title: '格林威治半日遊 → 飛回台北',
       theme: '🚢 子午線上道別',
-      transport: '上午：Uber Boat 遊船（Tower Pier → Greenwich，約 30 分鐘，App 購票較便宜）。下午回市區取行李 → Elizabeth Line 直達希斯洛。',
+      transport: '上午：Uber Boat 遊船（Tower Pier → Greenwich，約 30 分鐘，App 購票較便宜）。下午回市區取行李 → 前往蓋威克 LGW（阿聯酋航班；Thameslink 或 Victoria 搭 Gatwick Express）。',
       spots: [
         { time: '09:00', name: 'Uber Boat 泰晤士河遊船', en: 'Uber Boat to Greenwich', desc: '從水上看塔橋與金絲雀碼頭天際線，兼具交通與觀光。App 或線上購票比現場便宜。', price: '單程約 £6.2 起', duration: '40 分鐘', book: { label: '購票', url: 'https://www.thamesclippers.com/plan-your-journey/ticket-information' }, map: 'Tower Millennium Pier, London' },
         { time: '10:00', name: '皇家天文台・本初子午線', en: 'Royal Observatory', desc: '雙腳橫跨東西半球！山丘上眺望格林威治全景與倫敦天際線。', price: '£24（線上）', hours: '10:00–17:00', duration: '1.5 小時', book: { label: '官網訂票', url: 'https://www.rmg.co.uk/plan-your-visit/tickets-prices' }, map: 'Royal Observatory Greenwich' },
         { time: '11:45', name: '格林威治市集・午餐', en: 'Greenwich Market', desc: '有頂棚的百年手作市集（每日開放），各國小吃便宜好吃，順便買最後的紀念品。卡蒂薩克號帆船在旁邊可看外觀。', price: '免費入場', duration: '1.5 小時', map: 'Greenwich Market, London' },
-        { time: '14:00', name: '回市區取行李 → 前往希斯洛', en: 'To Heathrow', desc: 'DLR + 地鐵回飯店取行李，搭 Elizabeth Line 或 Piccadilly Line 到希斯洛。國際線起飛前 3 小時到機場。', price: '£5.9–15.5', duration: '2 小時', map: 'Heathrow Airport, London' },
-        { time: '晚上', name: '班機起飛 → 台北', en: 'LHR → TPE', desc: '晚班機起飛（直飛隔天下午抵達；轉機依航班）。', map: 'Heathrow Airport, London' },
+        { time: '14:00', name: '回市區取行李 → 前往蓋威克', en: 'To Gatwick', desc: 'DLR + 地鐵回飯店取行李，搭 Thameslink（多站可上車，約 £15）或到 Victoria 搭 Gatwick Express（30 分鐘直達）。國際線起飛前 3 小時到機場。', price: '£15–21.3', duration: '2 小時', map: 'Gatwick Airport' },
+        { time: '依票面', name: '班機起飛 → 杜拜 → 台北', en: 'LGW → DXB → TPE', desc: '阿聯酋經杜拜轉機回台北，抵達時間依班次（訂票時留意回程起飛時間，太早的話格林威治行程要縮短或取消）。', map: 'Gatwick Airport' },
       ],
       rainNote: '雨天改市區室內輕鬆版：',
       rainSpots: [
