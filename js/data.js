@@ -33,7 +33,7 @@ window.TRIP = {
         { time: '11:00', name: '白金漢宮衛兵交接', en: 'Changing of the Guard', desc: '今天（9/8 週二）正好有衛兵交接！建議 10:40 前抵達卡位（維多利亞女王紀念碑階梯視野好）。', price: '免費', hours: '11:00 開始，約 45 分鐘', duration: '1–1.5 小時', tube: 'Green Park / St James’s Park', book: { label: '出發前確認場次', url: 'https://www.householddivision.org.uk/changing-the-guard-calendar' }, map: 'Buckingham Palace, London' },
         { time: '12:30', name: '聖詹姆士公園散步・午餐', en: 'St James’s Park', desc: '穿過公園往特拉法加廣場方向，途中在 Piccadilly 周邊吃午餐（推薦老字號 Fortnum & Mason 食品館或平價連鎖 Pret）。', price: '免費', duration: '1.5 小時', map: 'St James\'s Park, London' },
         { time: '14:30', name: '國家美術館', en: 'National Gallery', desc: '梵谷《向日葵》、莫內、達文西真跡，全部免費！2026 年適逢建館 200 週年。', price: '免費', hours: '每日 10:00–18:00', duration: '2 小時', tube: 'Charing Cross', book: { label: '官網資訊', url: 'https://www.nationalgallery.org.uk/visiting/plan-your-visit' }, map: 'National Gallery, London' },
-        { time: '17:00', name: '特拉法加廣場 → 皮卡迪利圓環', en: 'Trafalgar Square → Piccadilly Circus', desc: '朋友去上班後自己散步逛市中心霓虹，晚餐推薦中國城（Chinatown）或蘇活區。', price: '免費', duration: '2 小時', map: 'Piccadilly Circus, London' },
+        { time: '17:00', name: '特拉法加廣場 → 皮卡迪利圓環', en: 'Trafalgar Square → Piccadilly Circus', desc: '朋友去上班後自己散步逛市中心霓虹，順路逛萊斯特廣場的 LEGO 旗艦店（有大笨鐘樂高）與 M&M’s World，晚餐推薦中國城（Chinatown）或蘇活區。', price: '免費', duration: '2 小時', map: 'Piccadilly Circus, London' },
       ],
       rainNote: '大雨時衛兵交接可能取消，改走全室內路線：',
       rainSpots: [
@@ -52,8 +52,9 @@ window.TRIP = {
       spots: [
         { time: '09:00', name: '倫敦塔', en: 'Tower of London', desc: '看王冠珠寶（Crown Jewels）要一開門就衝，可省排隊 1 小時。別錯過 Yeoman Warder（皇家衛士）免費導覽，幽默又精彩。', price: '£34.8（線上）', hours: '週二至六 09:00–17:30', duration: '3 小時', tube: 'Tower Hill', book: { label: '官網訂票', url: 'https://www.hrp.org.uk/tower-of-london/visit/tickets-and-prices/' }, map: 'Tower of London' },
         { time: '12:15', name: '塔橋', en: 'Tower Bridge', desc: '登上塔橋走玻璃步道，俯瞰泰晤士河。時間緊可只在橋上拍照（免費）。', price: '£13.4（線上）/ 走過橋免費', hours: '09:30–18:00', duration: '1 小時', tube: 'Tower Hill', book: { label: '官網訂票', url: 'https://www.towerbridge.org.uk/whats-on/entry-to-tower-bridge' }, map: 'Tower Bridge, London' },
-        { time: '13:30', name: '波羅市場・午餐', en: 'Borough Market', desc: '倫敦最棒的美食市集（週三開始熱鬧）。必吃：Kappacasein 起司三明治、Padella 手工義大利麵（排隊名店）、生蠔攤。', price: '免費入場', hours: '週三至六最熱鬧，10:00–17:00', duration: '1.5 小時', tube: 'London Bridge', book: { label: '官網', url: 'https://boroughmarket.org.uk/visit-us/' }, map: 'Borough Market, London' },
+        { time: '13:30', name: '波羅市場・午餐', en: 'Borough Market', desc: '倫敦最棒的美食市集（週三開始熱鬧）。必吃：Kappacasein 起司三明治、Padella 手工義大利麵（排隊名店）、生蠔攤。飯後到市場旁的 Monmouth Coffee 喝一杯倫敦名店手沖；隔壁的 Southwark 大教堂（免費）與金鹿號帆船複製品也順路看看。', price: '免費入場', hours: '週三至六最熱鬧，10:00–17:00', duration: '1.5 小時', tube: 'London Bridge', book: { label: '官網', url: 'https://boroughmarket.org.uk/visit-us/' }, map: 'Borough Market, London' },
         { time: '15:15', name: '聖保羅大教堂', en: 'St Paul’s Cathedral', desc: '走千禧橋（哈利波特混血王子開場場景！）過河，登 528 階圓頂看倫敦全景。最後入場 16:00，要抓緊。', price: '£24–27（線上較便宜）', hours: '週三 10:00–16:30', duration: '1.5–2 小時', tube: 'St Paul’s', book: { label: '官網訂票', url: 'https://www.stpauls.co.uk/ticket-types-and-prices' }, map: 'St Paul\'s Cathedral, London' },
+        { time: '16:50', name: 'One New Change 頂樓平台', en: 'One New Change Rooftop', desc: '教堂正對面的購物中心，搭免費電梯上 6 樓露台——正對聖保羅圓頂的最佳拍照角度，遊客少、完全免費。', price: '免費', hours: '至 21:00 左右', duration: '20 分鐘', tube: 'St Paul’s', map: 'One New Change, London' },
         { time: '17:30', name: '利德賀市場', en: 'Leadenhall Market', desc: '哈利波特「斜角巷」取景地！維多利亞式拱廊超好拍，此時商家剛下班氛圍最好。', price: '免費', duration: '30 分鐘', tube: 'Monument', map: 'Leadenhall Market, London' },
         { time: '18:00', name: '空中花園（需預約）', en: 'Sky Garden', desc: '35 樓免費空中花園看日落＋夜景。免費票每週一釋出 3 週後場次，搶到就是賺到；沒搶到可平日 walk-in 碰運氣或改買 The Shard（£28.5 起）。', price: '免費（需預約）', hours: '週一至五至 18:00', duration: '1 小時', tube: 'Monument', book: { label: '免費預約', url: 'https://skygarden.london/booking/' }, map: 'Sky Garden, 20 Fenchurch Street, London' },
       ],
@@ -176,9 +177,10 @@ window.TRIP = {
       spots: [
         { time: '10:00', name: '自然史博物館', en: 'Natural History Museum', desc: '哥德式「動物大教堂」建築本身就是景點，藍鯨骨架大廳、恐龍展廳、地震體驗，免費！', price: '免費', hours: '10:00–17:50', duration: '2 小時', tube: 'South Kensington', book: { label: '免費預約', url: 'https://www.nhm.ac.uk/visit.html' }, map: 'Natural History Museum, London' },
         { time: '12:15', name: 'V&A 博物館（快閃精華版）', en: 'V&A Museum', desc: '就在隔壁！挑重點看：時尚廳、珠寶廳、Cast Courts 石膏像中庭。', price: '免費', duration: '1.5 小時', tube: 'South Kensington', map: 'Victoria and Albert Museum, London' },
-        { time: '14:00', name: '肯辛頓花園散步（宮殿外觀）', en: 'Kensington Gardens', desc: '肯辛頓宮週二休館，就在花園散步看宮殿外觀與黛安娜王妃紀念噴泉（想入內明天 D10 週三有開）。', price: '花園免費', duration: '1 小時', tube: 'High Street Kensington', map: 'Kensington Palace, London' },
+        { time: '14:00', name: '肯辛頓花園・亞伯特紀念碑・海德公園', en: 'Kensington Gardens & Hyde Park', desc: '肯辛頓宮週二休館，改在花園散步看宮殿外觀；博物館對面金光閃閃的亞伯特紀念碑必拍（對面就是皇家亞伯特音樂廳），再沿海德公園往北走。', price: '免費', duration: '1 小時', tube: 'High Street Kensington', map: 'Albert Memorial, Kensington Gardens, London' },
         { time: '15:30', name: '英式下午茶（與朋友）', en: 'Afternoon Tea', desc: '三選一：Cutter & Squidge（Soho 創意甜點，£32.5）／Cinnamon Bazaar（英印風，£27.5）／奢華首選 Fortnum & Mason（£70 上下，難得體驗值得）。多數需預約。', price: '£27.5–75／人', duration: '1.5–2 小時', book: { label: 'Cutter & Squidge 預約', url: 'https://cutterandsquidge.com/pages/afternoon-tea' }, map: 'Cutter and Squidge, Soho, London' },
-        { time: '17:30', name: '牛津街・攝政街購物', en: 'Oxford St & Regent St', desc: 'Selfridges 百貨、Liberty 百年木造百貨（必看建築）、Regent Street 弧形街景。', price: '免費入場', hours: '多數店營業至 21:00', duration: '2.5 小時', tube: 'Oxford Circus', map: 'Liberty London, Regent Street' },
+        { time: '17:30', name: '牛津街・攝政街購物', en: 'Oxford St & Regent St', desc: 'Selfridges 百貨、Liberty 百年木造百貨（必看建築）、Regent Street 弧形街景。', price: '免費入場', hours: '多數店營業至 21:00', duration: '2 小時', tube: 'Oxford Circus', map: 'Liberty London, Regent Street' },
+        { time: '19:30', name: '晚餐：Mercato Mayfair', en: 'Mercato Mayfair', desc: '百年教堂改建的美食廣場——在彩繪玻璃與挑高圓頂下吃遍義式披薩、生蠔、亞洲料理，氣氛滿分，購物完走過去 10 分鐘。', price: '£10–20／人', hours: '至 22:00 左右', duration: '1.5 小時', tube: 'Bond Street', map: 'Mercato Mayfair, London' },
       ],
       rainNote: '本日幾乎全室內，天然防雨！花園散步縮短即可。',
       rainSpots: null,
@@ -192,7 +194,8 @@ window.TRIP = {
       spots: [
         { time: '09:00', name: 'Uber Boat 泰晤士河遊船', en: 'Uber Boat to Greenwich', desc: '從水上看塔橋與金絲雀碼頭天際線，兼具交通與觀光。App 或線上購票比現場便宜。', price: '單程約 £6.2 起', duration: '40 分鐘', book: { label: '購票', url: 'https://www.thamesclippers.com/plan-your-journey/ticket-information' }, map: 'Tower Millennium Pier, London' },
         { time: '10:00', name: '皇家天文台・本初子午線', en: 'Royal Observatory', desc: '雙腳橫跨東西半球！山丘上眺望格林威治全景與倫敦天際線。', price: '£24（線上）', hours: '10:00–17:00', duration: '1.5 小時', book: { label: '官網訂票', url: 'https://www.rmg.co.uk/plan-your-visit/tickets-prices' }, map: 'Royal Observatory Greenwich' },
-        { time: '11:45', name: '格林威治市集・午餐', en: 'Greenwich Market', desc: '有頂棚的百年手作市集（每日開放），各國小吃便宜好吃，順便買紀念品。卡蒂薩克號帆船在旁邊可看外觀。', price: '免費入場', duration: '1.5 小時', map: 'Greenwich Market, London' },
+        { time: '11:30', name: '舊皇家海軍學院', en: 'Old Royal Naval College', desc: '天文台下山途經——《雷神索爾》《加勒比海盜》都在這取景，對稱的巴洛克雙塔園區免費進入；有興趣可加購 Painted Hall「英國的西斯汀禮拜堂」門票。', price: '園區免費／Painted Hall 約 £15', duration: '30 分鐘', map: 'Old Royal Naval College, Greenwich' },
+        { time: '12:15', name: '格林威治市集・午餐', en: 'Greenwich Market', desc: '有頂棚的百年手作市集（每日開放），各國小吃便宜好吃，順便買紀念品。卡蒂薩克號帆船在旁邊可看外觀。', price: '免費入場', duration: '1.5 小時', map: 'Greenwich Market, London' },
         { time: '14:00', name: '肯辛頓宮', en: 'Kensington Palace', desc: '黛安娜王妃故居，今天（週三）有開！State Apartments 與特展。時間不夠或想省門票就改逛海德公園。', price: '£24.7（線上）', hours: '週三至日 10:00–18:00', duration: '2 小時', tube: 'High Street Kensington', book: { label: '官網訂票', url: 'https://www.hrp.org.uk/kensington-palace/visit/tickets-and-prices/' }, map: 'Kensington Palace, London' },
         { time: '17:00', name: '最後採買・打包', en: 'Last Shopping & Packing', desc: '超市掃伴手禮（茶葉、餅乾、保養品），回家打包行李。明天中午前就要出門了。', duration: '2 小時', map: 'Marks and Spencer, Oxford Street, London' },
       ],
