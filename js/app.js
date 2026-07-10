@@ -126,9 +126,33 @@
     }).catch(function () { el.style.display = 'none'; });
   }
 
+  // ---------- 必辦清單 checkbox（localStorage 記憶）----------
+  function initChecklist() {
+    document.querySelectorAll('.checklist li').forEach(function (li, i) {
+      var key = 'travel-uk-chk-' + i;
+      var box = document.createElement('input');
+      box.type = 'checkbox';
+      box.className = 'chk';
+      box.checked = localStorage.getItem(key) === '1';
+      li.classList.toggle('done', box.checked);
+      box.addEventListener('change', function () {
+        li.classList.toggle('done', box.checked);
+        try { localStorage.setItem(key, box.checked ? '1' : '0'); } catch (e) {}
+      });
+      li.insertBefore(box, li.firstChild);
+      // 點整列文字也能勾選（避免誤觸連結）
+      li.addEventListener('click', function (e) {
+        if (e.target.closest('a') || e.target === box) return;
+        box.checked = !box.checked;
+        box.dispatchEvent(new Event('change'));
+      });
+    });
+  }
+
   document.addEventListener('DOMContentLoaded', function () {
     renderDays();
     renderDayNav();
+    initChecklist();
     loadWeather();
     loadFx();
   });
