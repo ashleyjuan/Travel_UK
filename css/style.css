@@ -1,0 +1,208 @@
+/* ============ 英倫旅遊書 — 手機優先 ============ */
+:root {
+  --cream: #faf6ef;
+  --paper: #ffffff;
+  --ink: #2b2b33;
+  --navy: #1f3a5f;
+  --red: #b23a48;
+  --gold: #c9a227;
+  --muted: #6b6b76;
+  --line: #e8e1d4;
+  --rain: #4a7fa5;
+  --alt: #7c6bb0;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; scroll-padding-top: 64px; }
+
+body {
+  font-family: 'Noto Sans TC', -apple-system, 'PingFang TC', sans-serif;
+  background: var(--cream);
+  color: var(--ink);
+  line-height: 1.75;
+}
+
+h1, h2, h3, .day-date { font-family: 'Noto Serif TC', 'Noto Sans TC', serif; }
+
+a { color: var(--navy); }
+
+/* ---------- 頂部導覽 ---------- */
+.topnav {
+  position: sticky; top: 0; z-index: 100;
+  background: var(--navy); color: #fff;
+  display: flex; align-items: center; gap: 4px;
+  overflow-x: auto; -webkit-overflow-scrolling: touch;
+  padding: 0 8px; white-space: nowrap;
+}
+.topnav a {
+  color: #fff; text-decoration: none; font-size: 14px;
+  padding: 12px 10px; opacity: .85; flex-shrink: 0;
+}
+.topnav a:hover, .topnav a:focus { opacity: 1; border-bottom: 2px solid var(--gold); }
+
+/* ---------- Hero ---------- */
+.hero {
+  background: linear-gradient(160deg, #1f3a5f 0%, #2d5580 60%, #b23a48 140%);
+  color: #fff; text-align: center; padding: 56px 20px 44px;
+}
+.hero h1 { font-size: 30px; letter-spacing: 2px; margin-bottom: 10px; }
+.hero .sub { font-size: 15px; opacity: .92; }
+.hero .dates {
+  display: inline-block; margin-top: 16px; padding: 8px 20px;
+  border: 1px solid rgba(255,255,255,.5); border-radius: 999px; font-size: 14px;
+}
+
+/* ---------- 版面 ---------- */
+main { max-width: 760px; margin: 0 auto; padding: 0 14px 80px; }
+
+section { margin-top: 44px; }
+
+.section-title {
+  font-size: 24px; color: var(--navy);
+  border-bottom: 3px double var(--gold);
+  padding-bottom: 8px; margin-bottom: 20px;
+}
+.section-title .sec-en { font-size: 13px; color: var(--muted); font-weight: 400; margin-left: 8px; }
+
+.card {
+  background: var(--paper); border: 1px solid var(--line);
+  border-radius: 14px; padding: 18px 16px; margin-bottom: 14px;
+  box-shadow: 0 1px 4px rgba(31,58,95,.06);
+}
+.card h3 { color: var(--navy); font-size: 17px; margin-bottom: 8px; }
+.card ul { padding-left: 20px; }
+.card li { margin: 6px 0; font-size: 15px; }
+
+/* ---------- 小工具 ---------- */
+.widgets { display: grid; gap: 12px; }
+#fx-widget { font-size: 15px; background: #fdf9ee; border: 1px solid var(--gold); border-radius: 12px; padding: 12px 14px; }
+.fx-samples { display: block; font-size: 13px; color: var(--muted); }
+#weather-widget { background: #eef4fa; border: 1px solid #cfe0ee; border-radius: 12px; padding: 12px 14px; font-size: 14px; }
+.wx-now { margin-bottom: 8px; }
+.wx-days { display: grid; grid-template-columns: repeat(auto-fit, minmax(86px, 1fr)); gap: 6px; }
+.wx-day { background: #fff; border-radius: 8px; padding: 6px 4px; text-align: center; font-size: 12px; display: grid; gap: 2px; }
+.wx-icon { font-size: 18px; }
+.wx-rain { color: var(--rain); }
+
+/* ---------- 表格 ---------- */
+.table-wrap { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; font-size: 14px; background: #fff; }
+th, td { border: 1px solid var(--line); padding: 8px 10px; text-align: left; vertical-align: top; }
+th { background: #f2ede1; color: var(--navy); white-space: nowrap; }
+
+/* ---------- 檢查清單 ---------- */
+.checklist { list-style: none; padding: 0 !important; }
+.checklist li {
+  padding: 10px 12px 10px 38px; position: relative;
+  background: #fff; border: 1px solid var(--line); border-radius: 10px; margin: 8px 0;
+}
+.checklist li::before { content: '☐'; position: absolute; left: 12px; color: var(--red); font-size: 17px; }
+.checklist .when { display: inline-block; font-size: 12px; color: #fff; background: var(--red); border-radius: 6px; padding: 0 8px; margin-right: 6px; }
+
+/* ---------- 每日快速導覽 ---------- */
+#day-nav {
+  display: flex; gap: 8px; overflow-x: auto; padding: 4px 0 10px;
+  position: sticky; top: 46px; z-index: 90; background: var(--cream);
+}
+#day-nav a {
+  flex-shrink: 0; text-decoration: none; font-size: 13px;
+  background: #fff; border: 1px solid var(--line); border-radius: 999px; padding: 4px 12px;
+}
+
+/* ---------- 每日卡片 ---------- */
+.day-card {
+  background: var(--paper); border: 1px solid var(--line); border-radius: 16px;
+  margin-bottom: 26px; overflow: hidden; box-shadow: 0 2px 8px rgba(31,58,95,.07);
+}
+.day-header {
+  display: flex; align-items: center; gap: 14px;
+  background: linear-gradient(135deg, var(--navy), #2d5580); color: #fff; padding: 16px;
+}
+.day-date { text-align: center; line-height: 1.2; flex-shrink: 0; }
+.d-num { display: block; font-size: 22px; font-weight: 700; }
+.d-week { font-size: 12px; opacity: .85; }
+.day-title h3 { font-size: 17px; line-height: 1.4; }
+.day-theme { font-size: 13px; opacity: .9; }
+
+.day-transport {
+  font-size: 13.5px; background: #f2ede1; color: #4a4433;
+  padding: 10px 16px; border-bottom: 1px solid var(--line);
+}
+
+/* Tabs */
+.tabs { display: flex; border-bottom: 2px solid var(--line); }
+.tab {
+  flex: 1; padding: 11px 4px; font-size: 14px; font-weight: 600;
+  background: #f7f3ea; border: none; color: var(--muted); cursor: pointer;
+  font-family: inherit; border-bottom: 3px solid transparent;
+}
+.tab.active { background: #fff; color: var(--navy); border-bottom-color: var(--gold); }
+.pane { display: none; padding: 6px 14px 14px; }
+.pane.active { display: block; }
+
+.plan-note { font-size: 14px; border-radius: 10px; padding: 10px 12px; margin: 10px 0 4px; }
+.rain-note { background: #eef4fa; color: #2c5a7d; }
+.alt-note { background: #f1edfa; color: #52418c; }
+.ok-note { background: #edf7ee; color: #2e6b3a; }
+
+/* Timeline */
+.timeline { position: relative; padding-top: 8px; }
+.spot { display: flex; gap: 12px; padding: 12px 0; border-bottom: 1px dashed var(--line); }
+.spot:last-child { border-bottom: none; }
+.spot-time {
+  flex-shrink: 0; width: 52px; font-size: 13px; font-weight: 700; color: var(--red);
+  text-align: right; padding-top: 2px;
+}
+.spot-body { flex: 1; min-width: 0; }
+.spot-body h4 { font-size: 15.5px; color: var(--navy); }
+.spot-body h4 .en { font-size: 12px; color: var(--muted); font-weight: 400; }
+.spot-body p { font-size: 14px; margin-top: 3px; }
+.spot-tip { color: #7a6520; font-size: 13.5px !important; }
+.spot-meta { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 7px; }
+.meta {
+  font-size: 12px; background: #f2ede1; border-radius: 6px; padding: 2px 8px; color: #5a5346;
+}
+.spot-links { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 9px; }
+.btn {
+  display: inline-block; font-size: 13px; font-weight: 600; text-decoration: none;
+  border-radius: 8px; padding: 6px 14px;
+}
+.btn-map { background: var(--navy); color: #fff; }
+.btn-book { background: #fff; color: var(--red); border: 1.5px solid var(--red); }
+
+/* Day tips */
+.day-tips {
+  margin: 0 14px 16px; background: #fdf9ee; border: 1px dashed var(--gold);
+  border-radius: 10px; padding: 10px 14px; font-size: 13.5px;
+}
+.day-tips ul { padding-left: 18px; margin-top: 4px; }
+
+/* ---------- 美食卡片 ---------- */
+.food-grid { display: grid; gap: 12px; }
+.food-item { display: flex; justify-content: space-between; align-items: flex-start; gap: 10px; padding: 10px 0; border-bottom: 1px dashed var(--line); }
+.food-item:last-child { border-bottom: none; }
+.food-item .fi-info { flex: 1; }
+.food-item h4 { font-size: 15px; color: var(--navy); }
+.food-item p { font-size: 13.5px; color: var(--muted); }
+.food-item .btn { flex-shrink: 0; }
+
+/* ---------- Footer ---------- */
+footer {
+  text-align: center; font-size: 12.5px; color: var(--muted);
+  padding: 30px 16px 40px; border-top: 1px solid var(--line); margin-top: 50px;
+}
+
+/* ---------- 桌機微調 ---------- */
+@media (min-width: 720px) {
+  .hero h1 { font-size: 40px; }
+  .day-title h3 { font-size: 20px; }
+  .topnav a { font-size: 15px; padding: 14px 16px; }
+}
+
+/* ---------- 列印（當紙本旅遊書用）---------- */
+@media print {
+  .topnav, #day-nav, .widgets, .btn-map { display: none; }
+  .pane { display: block !important; }
+  .day-card { break-inside: avoid; box-shadow: none; }
+}
