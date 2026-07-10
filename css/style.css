@@ -130,6 +130,11 @@ th { background: #f2ede1; color: var(--navy); white-space: nowrap; }
   padding: 10px 16px; border-bottom: 1px solid var(--line);
 }
 
+.day-friend {
+  font-size: 13.5px; background: #edf7ee; color: #2e6b3a;
+  padding: 10px 16px; border-bottom: 1px solid var(--line); font-weight: 600;
+}
+
 /* Tabs */
 .tabs { display: flex; border-bottom: 2px solid var(--line); }
 .tab {

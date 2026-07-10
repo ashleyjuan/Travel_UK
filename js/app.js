@@ -63,6 +63,7 @@
         '<div class="day-title"><h3>' + d.title + '</h3><span class="day-theme">' + d.theme + '</span></div>' +
       '</header>' +
       '<div class="day-transport">🚆 ' + d.transport + '</div>' +
+      (d.friend ? '<div class="day-friend">🤝 ' + d.friend + '</div>' : '') +
       (tabs.length > 1 ? '<div class="tabs">' + tabs.join('') + '</div>' : '') +
       panes.join('') +
       (d.dayTips ? '<div class="day-tips"><strong>📌 小提醒</strong><ul>' + d.dayTips.map(function (t) { return '<li>' + t + '</li>'; }).join('') + '</ul></div>' : '') +
