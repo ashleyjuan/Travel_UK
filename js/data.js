@@ -33,7 +33,8 @@ window.TRIP = {
         { time: '11:00', name: '白金漢宮衛兵交接', en: 'Changing of the Guard', desc: '今天（9/8 週二）正好有衛兵交接！建議 10:40 前抵達卡位（維多利亞女王紀念碑階梯視野好）。', price: '免費', hours: '11:00 開始，約 45 分鐘', duration: '1–1.5 小時', tube: 'Green Park / St James’s Park', book: { label: '出發前確認場次', url: 'https://www.householddivision.org.uk/changing-the-guard-calendar' }, map: 'Buckingham Palace, London' },
         { time: '12:30', name: '聖詹姆士公園散步・午餐', en: 'St James’s Park', desc: '穿過公園往特拉法加廣場方向，途中在 Piccadilly 周邊吃午餐（推薦老字號 Fortnum & Mason 食品館或平價連鎖 Pret）。', price: '免費', duration: '1.5 小時', map: 'St James\'s Park, London' },
         { time: '14:30', name: '國家美術館', en: 'National Gallery', desc: '梵谷《向日葵》、莫內、達文西真跡，全部免費！2026 年適逢建館 200 週年。', price: '免費', hours: '每日 10:00–18:00', duration: '2 小時', tube: 'Charing Cross', book: { label: '官網資訊', url: 'https://www.nationalgallery.org.uk/visiting/plan-your-visit' }, map: 'National Gallery, London' },
-        { time: '17:00', name: '特拉法加廣場 → 皮卡迪利圓環', en: 'Trafalgar Square → Piccadilly Circus', desc: '朋友去上班後自己散步逛市中心霓虹，順路逛萊斯特廣場的 LEGO 旗艦店（有大笨鐘樂高）與 M&M’s World；廣場旁的 Cecil Court 書店古董巷據說是「斜角巷」靈感來源之一，哈迷必繞。晚餐推薦中國城（Chinatown）或蘇活區。', price: '免費', duration: '2 小時', map: 'Cecil Court, London' },
+        { time: '17:00', name: '特拉法加廣場 → 皮卡迪利圓環', en: 'Trafalgar Square → Piccadilly Circus', desc: '朋友去上班後自己散步逛市中心霓虹，順路逛萊斯特廣場的 LEGO 旗艦店（有大笨鐘樂高）與 M&M’s World；廣場旁的 Cecil Court 書店古董巷據說是「斜角巷」靈感來源之一，哈迷必繞。17:00–18:45 在中國城（Chinatown）吃晚餐。', price: '免費', duration: '2 小時', map: 'Cecil Court, London' },
+        { time: '19:30', name: '🎭 歌劇魅影（選看・40 週年檔期）', en: 'The Phantom of the Opera', desc: '2026 正是魅影 40 週年（1986 年就在這座劇院首演），百老匯明星 Jordan Donica 主演！His Majesty’s Theatre 就在皮卡迪利圓環旁走路 2 分鐘，行程無縫接軌。官網 £25 起免手續費，40 週年需求高建議提前訂；選位首推 Stalls 中段（水晶吊燈就在頭上）。備選場次：9/10（四）牛津回來後、9/16（三）道別壓軸場；週三六另有 14:30 午場、週日休演。', price: '£25–120（Day Seats £37.5 每天 10:00 釋出）', hours: '19:30 開演，全長 2.5 小時', duration: '2.5 小時', tube: 'Piccadilly Circus', book: { label: '官網訂票', url: 'https://uk.thephantomoftheopera.com/tickets' }, map: 'His Majesty\'s Theatre, Haymarket, London' },
       ],
       rainNote: '大雨時衛兵交接可能取消，改走全室內路線：',
       rainSpots: [
@@ -86,7 +87,7 @@ window.TRIP = {
       rainSpots: [
         { time: '14:00', name: '艾許莫林博物館', en: 'Ashmolean Museum', desc: '免費、英國最古老的公共博物館，埃及木乃伊到拉斐爾素描都有，雨天待兩小時剛剛好。', price: '免費', hours: '10:00–17:00', duration: '2 小時', map: 'Ashmolean Museum, Oxford' },
       ],
-      dayTips: ['火車 Advance 票綁定班次、不可退款，時間抓寬鬆一點', '嫌自助麻煩可跟團：KKday 有牛津+劍橋中文一日遊（約 NT$3,235），但自助搭火車更自由省錢'],
+      dayTips: ['火車 Advance 票綁定班次、不可退款，時間抓寬鬆一點', '嫌自助麻煩可跟團：KKday 有牛津+劍橋中文一日遊（約 NT$3,235），但自助搭火車更自由省錢', '🎭 魅影備選場次：17:15 回到 Paddington 後，趕 19:30 His Majesty’s Theatre 的晚場時間充裕（若 9/8 沒看成）'],
     },
     {
       id: 'd5', date: '9/11', weekday: '週五', title: '大英博物館・9¾ 月台・晚上看朋友的演出',
@@ -206,7 +207,7 @@ window.TRIP = {
         { time: '10:00', name: '肯辛頓宮＋自然史補完', en: 'Kensington Palace', desc: '宮殿全室內；還沒逛夠的南肯辛頓博物館群也在附近。', price: '£24.7', duration: '3 小時', tube: 'High Street Kensington', map: 'Kensington Palace, London' },
         { time: '14:00', name: '利柏堤百貨＆攝政街室內採買', en: 'Liberty & Regent Street', desc: '室內購物補貨：茶葉、圍巾、伴手禮，順便打包前最後巡禮。', price: '免費入場', duration: '2.5 小時', tube: 'Oxford Circus', map: 'Liberty London' },
       ],
-      dayTips: ['行李秤一下：阿聯酋經濟艙托運通常 25–35kg（依票種），伴手禮買太多要留意', '液體（酒、醬料）記得放托運'],
+      dayTips: ['行李秤一下：阿聯酋經濟艙托運通常 25–35kg（依票種），伴手禮買太多要留意', '液體（酒、醬料）記得放托運', '🎭 魅影最終備選場：今晚 19:30 可當「道別倫敦」壓軸（週三另有 14:30 午場），但隔天要飛、自己衡量體力'],
     },
     {
       id: 'd11', date: '9/17', weekday: '週四', title: '道別倫敦 → 台北（9/18 抵達）',
