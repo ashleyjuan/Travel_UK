@@ -149,10 +149,29 @@
     });
   }
 
+  // ---------- 行李清單收合（localStorage 記憶）----------
+  function initPackingToggle() {
+    var btn = document.getElementById('packing-toggle');
+    var body = document.getElementById('packing-body');
+    if (!btn || !body) return;
+    function apply(hidden) {
+      body.style.display = hidden ? 'none' : '';
+      btn.textContent = hidden ? '展開 ▼' : '收合 ▲';
+    }
+    var hidden = localStorage.getItem('travel-uk-packing-hidden') === '1';
+    apply(hidden);
+    btn.addEventListener('click', function () {
+      hidden = !hidden;
+      apply(hidden);
+      try { localStorage.setItem('travel-uk-packing-hidden', hidden ? '1' : '0'); } catch (e) {}
+    });
+  }
+
   document.addEventListener('DOMContentLoaded', function () {
     renderDays();
     renderDayNav();
     initChecklist();
+    initPackingToggle();
     loadWeather();
     loadFx();
   });

@@ -65,6 +65,13 @@ section { margin-top: 44px; }
 }
 .section-title .sec-en { font-size: 13px; color: var(--muted); font-weight: 400; margin-left: 8px; }
 
+.toggle-btn {
+  float: right; font-size: 13px; font-weight: 600; font-family: inherit;
+  background: #fff; color: var(--navy); border: 1.5px solid var(--navy);
+  border-radius: 999px; padding: 4px 14px; cursor: pointer; margin-top: 2px;
+}
+.toggle-btn:hover { background: var(--navy); color: #fff; }
+
 .card {
   background: var(--paper); border: 1px solid var(--line);
   border-radius: 14px; padding: 18px 16px; margin-bottom: 14px;
