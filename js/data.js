@@ -7,6 +7,7 @@ window.TRIP = {
       id: 'd1', date: '9/7', weekday: '週一', title: '啟程：台北 → 倫敦（中午抵達）',
       theme: '✈️ 阿聯酋 EK・經杜拜',
       friend: '朋友今天休假！中午抵達後直接會合，南岸散步＋接風晚餐一路同行。',
+      stay: '住朋友家（第 1 晚，共 5 晚：9/7 ＋ 9/13–9/16）。大行李箱可留朋友家，明天只帶 5 天份小包去溫布頓。',
       transport: '推薦航班：阿聯酋航空 9/7 凌晨 00:30 TPE 起飛 → 杜拜轉機 2h45 → 當天中午 12:35 抵達蓋威克 LGW。進市區搭 Thameslink（約 £15，30–45 分鐘）或 Gatwick Express（£21.3 直達 Victoria）。本日交通費約 £18–24（機場線＋1–2 趟地鐵）。',
       spots: [
         { time: '9/6 晚', name: '桃園機場報到（注意：前一晚！）', en: 'TPE Check-in', desc: '凌晨 00:30 起飛 = 9/6（日）晚上 21:30 前就要到機場報到，別搞錯日期！出發前 3 天以上完成 UK ETA 申請（£20）。', map: 'Taoyuan International Airport' },
@@ -26,6 +27,7 @@ window.TRIP = {
       id: 'd2', date: '9/8', weekday: '週二', title: '西敏經典：國會大廈・衛兵交接・國家美術館',
       theme: '🏛️ 倫敦必看首日',
       friend: '朋友白天有空（晚上有演出）：衛兵交接、國家美術館可同行，約 17:00 目送他去上班。',
+      stay: 'Travelodge Wimbledon Central 入住第 1 晚（9/8–9/13 共 5 晚，£352.95）。27–29 Hartfield Road SW19 3SG，Wimbledon 站步行 1 分鐘，District 線直達 Westminster 不用換車。',
       transport: '全天步行 + 地鐵。起點：Westminster 站（Jubilee / District / Circle 線）。本日交通費約 £5–7（景點間全步行，僅往返共 2–3 趟地鐵；日上限 £8.9 封頂）。',
       spots: [
         { time: '09:00', name: '大笨鐘與國會大廈', en: 'Big Ben & Houses of Parliament', desc: '西敏橋上拍大笨鐘全景，晨光角度最美。', price: '免費（外觀）', duration: '30 分鐘', tube: 'Westminster', map: 'Big Ben, London' },
@@ -50,6 +52,7 @@ window.TRIP = {
       id: 'd3', date: '9/9', weekday: '週三', title: '千年倫敦：倫敦塔・塔橋・波羅市場・聖保羅',
       theme: '🏰 歷史與美食日',
       friend: '朋友雙場日（12:00–22:30）：今天單飛，好好當個歷史迷。',
+      stay: 'Travelodge Wimbledon Central（第 2 晚）。Wimbledon → Tower Hill District 線直達。今晚邦喬飛在溫布利球場開唱，那一帶飯店暴漲——溫布頓在西南邊，完全無感。',
       transport: '地鐵至 Tower Hill 站起步，全天沿泰晤士河步行為主。本日交通費約 £5–7（沿河步行串點，僅 2–3 趟地鐵）。',
       spots: [
         { time: '09:00', name: '倫敦塔', en: 'Tower of London', desc: '看王冠珠寶（Crown Jewels）要一開門就衝，可省排隊 1 小時。別錯過 Yeoman Warder（皇家衛士）免費導覽，幽默又精彩。', price: '£34.8（線上）', hours: '週二至六 09:00–17:30', duration: '3 小時', tube: 'Tower Hill', book: { label: '官網訂票', url: 'https://www.hrp.org.uk/tower-of-london/visit/tickets-and-prices/' }, map: 'Tower of London' },
@@ -75,6 +78,7 @@ window.TRIP = {
       id: 'd4', date: '9/10', weekday: '週四', title: '一日遊①：牛津大學城（全日深度版）',
       theme: '🎓 學院巡禮',
       friend: '朋友白天有空、晚上有演出：若他願意早起，牛津可同行——搭 16:00 回程火車，18:00 前回到倫敦來得及上班。',
+      stay: 'Travelodge Wimbledon Central（第 3 晚）。Wimbledon → Paddington 走 District 線，在 Earl’s Court 換 Edgware Road 方向的班次即達；07:50 的火車要抓好時間。',
       transport: '去程：Paddington → Oxford 火車（直達約 1 小時，Advance 票 £6.5–10，提前買！）。牛津市區全程步行。本日交通費約 £18–25（火車來回 £13–20 ＋市區地鐵 £5）。',
       spots: [
         { time: '07:50', name: '搭火車前往牛津', en: 'Paddington → Oxford', desc: '提前 12 週釋票，Advance 票最低 £6.5。用 GWR 官網或 Trainline 買電子票。', price: '£6.5–10（Advance）', duration: '1 小時', book: { label: 'GWR 訂票', url: 'https://www.gwr.com' }, map: 'Oxford Railway Station' },
@@ -92,6 +96,7 @@ window.TRIP = {
     },
     {
       id: 'd5', date: '9/11', weekday: '週五', title: '大英博物館・9¾ 月台・晚上看朋友的演出',
+      stay: 'Travelodge Wimbledon Central（第 4 晚）。看完朋友的演出、在 stage door 等到他之後，記得今晚是回溫布頓、不是回他家。末班車時間先查好。',
       theme: '🎭 文明瑰寶與朋友的舞台',
       friend: '今晚是重頭戲：去朋友的劇院看他的演出！晚上不排其他行程，散場等他一起回家。',
       transport: '地鐵為主：Tottenham Court Road → King’s Cross → Covent Garden → 劇院區。本日交通費約 £6–9（3–4 趟地鐵，日上限 £8.9 封頂）。',
@@ -111,6 +116,7 @@ window.TRIP = {
       id: 'd6', date: '9/12', weekday: '週六', title: '一日遊②：科茲窩鄉村 或 溫莎巨石陣巴斯（二選一）',
       theme: '🏡 鄉村美景 vs 🏰 三大經典',
       friend: '朋友雙場日：單飛跟團剛剛好，晚上 22:30 後才見得到他。',
+      stay: 'Travelodge Wimbledon Central（最後一晚，明早退房）。07:30 要到 Victoria 旁的 Grosvenor Gardens 集合：Wimbledon → Victoria District 線直達約 25 分鐘，抓 06:45 出門。',
       transport: '兩個方案都是跟團、Victoria 周邊集合，全程遊覽車不用研究班次。用下方分頁切換比較，決定後再訂（兩團都可免費取消，也可以都先卡位）。本日交通費約 £5（車資含在團費，僅往返集合點地鐵）。',
       spots: [
         { time: '08:15', name: '方案A：科茲窩跟團出發', en: 'Cotswolds Tour', desc: '推薦團（原推薦 KKday 團已售罄，以下有位）：① 史特拉福＋科茲窩含拜伯里 NT$3,839（4.4 分、1K+ 訂購，加碼莎士比亞故居）② 中文團科茲窩雙線 NT$2,696（4.5 分）③ Golden Tours £75.65 含兩道式午餐（英文）。', price: 'NT$2,696–3,839／£75.65', duration: '全日約 10–11 小時', book: { label: 'KKday 科茲窩團列表', url: 'https://www.kkday.com/zh-tw/product/productlist?keyword=%E7%A7%91%E8%8C%B2%E7%AA%A9' }, map: 'Victoria Coach Station, London' },
@@ -138,6 +144,7 @@ window.TRIP = {
       id: 'd7', date: '9/13', weekday: '週日', title: '一日遊③：哈利波特影城＋週日烤肉之夜',
       theme: '⚡ 魔法世界朝聖',
       friend: '朋友早場（12:00–17:00）：你白天進影城，傍晚他下班正好會合吃 Sunday Roast！',
+      stay: '⚠️ 今天換宿：早上退房後行李寄放（Travelodge 櫃檯或 Wimbledon 站 Stasher／Radical Storage），晚餐後搬回朋友家住到 9/16。影城要帶著行李不方便，務必先寄放。',
       transport: 'Euston → Watford Junction 火車（直達 20 分鐘，£13.4，可感應付款）→ 官方接駁巴士 15 分鐘（出示影城門票免費搭）。本日交通費約 £20–32（影城火車來回＋市區地鐵）。',
       spots: [
         { time: '09:00', name: '火車前往 Watford Junction', en: 'Euston → Watford Junction', desc: '車站外跟著指標搭哈利波特彩繪接駁車，每 30 分鐘一班。', price: '火車 £13.4 + 接駁免費', duration: '40 分鐘', map: 'Watford Junction Station' },
@@ -153,6 +160,7 @@ window.TRIP = {
       id: 'd8', date: '9/14', weekday: '週一', title: '一日遊④：七姊妹白崖（朋友休假日・全天同行！）',
       theme: '🤝 白崖健行雙人行',
       friend: '朋友全天休假——本週最重要的同行日！一起去看英格蘭最震撼的海岸線。',
+      stay: '住朋友家（9/13–9/16 這 4 晚）。',
       transport: '自助：Victoria → Seaford 火車（Lewes 轉車一次，約 1.5 小時，來回約 £25–32）。或跟中文團（超便宜）：KKday「陪爬陪拍」團 NT$1,228、Klook 版 NT$1,036。本日交通費：自助約 £37–44（火車來回＋沿海公車一日券 £9＋市區地鐵）／跟團約 £5。',
       spots: [
         { time: '08:00', name: '火車 Victoria → Seaford', en: 'London Victoria → Seaford', desc: '和朋友一起搭火車南下，在 Lewes 轉車一次。', price: '來回約 £25–32', duration: '1.5 小時', book: { label: 'Southern 訂票', url: 'https://www.southernrailway.com' }, map: 'Seaford Station' },
