@@ -1,33 +1,68 @@
-// 行程資料 — 2026/9/7（一）出發 → 9/17（四）返程、9/18（五）抵台
+// 行程資料 — 2026/9/5（六）出發 → 9/17（四）返程、9/18（五）抵台（國泰經香港，已開票）
 // 價格為 2026 年 7 月查證之參考值，出發前請以官網為準
 // 🤝 = 朋友可同行時段（週一全休；週三六 12:00–22:30 雙場；週日 12:00–17:00 早場；週二四五白天有空）
 window.TRIP = {
   days: [
     {
-      id: 'd1', date: '9/7', weekday: '週一', title: '啟程：台北 → 倫敦（中午抵達）',
-      theme: '✈️ 阿聯酋 EK・經杜拜',
-      friend: '朋友今天休假！中午抵達後直接會合，南岸散步＋接風晚餐一路同行。',
-      stay: '住朋友家（第 1 晚，共 5 晚：9/7 ＋ 9/13–9/16）。大行李箱可留朋友家，明天只帶 5 天份小包去溫布頓。',
-      transport: '推薦航班：阿聯酋航空 9/7 凌晨 00:30 TPE 起飛 → 杜拜轉機 2h45 → 當天中午 12:35 抵達蓋威克 LGW。進市區搭 Thameslink（約 £15，30–45 分鐘）或 Gatwick Express（£21.3 直達 Victoria）。本日交通費約 £18–24（機場線＋1–2 趟地鐵）。',
+      id: 'd1', date: '9/5', weekday: '週六', title: '啟程：台北 → 香港 → 倫敦（晚上抵達）',
+      theme: '✈️ 國泰 CX407＋CX253・已開票',
+      friend: '今天不會見到朋友——晚上才落地，入住後傳個訊息報平安，約好明晚見。',
+      stay: '自理住宿第 1 晚（9/5–9/13 共 8 晚，首選 Ealing 私人套房 Airbnb——見總覽住宿卡）。⚠️ 抵達住處約 22:30，訂房時務必先跟房東確認深夜入住方式。',
+      transport: 'CX407 台北 08:00 → 香港 10:00・轉機 3h25 → CX253 13:25 → 倫敦希斯洛 LHR T3 當晚 20:35。進市區：Piccadilly 線直達 Ealing Common／市中心沿線（約 £5.6）或 Elizabeth 線 30 分鐘到 Paddington（約 £13.9）。本日交通費約 £6–14。',
       spots: [
-        { time: '9/6 晚', name: '桃園機場報到（注意：前一晚！）', en: 'TPE Check-in', desc: '凌晨 00:30 起飛 = 9/6（日）晚上 21:30 前就要到機場報到，別搞錯日期！出發前 3 天以上完成 UK ETA 申請（£20）。', map: 'Taoyuan International Airport' },
-        { time: '00:30', name: '起飛 → 杜拜轉機', en: 'TPE → DXB → LGW', desc: '第一段約 9.5 小時，正好睡覺；杜拜轉機 2h45 不趕不拖，逛一下全球最大機場免稅店再上第二段（約 8 小時）。', duration: '總程 19 小時 5 分' },
-        { time: '12:35', name: '抵達倫敦蓋威克機場', en: 'London Gatwick (LGW)', desc: '入境走 eGate（台灣護照適用）。搭 Thameslink 進市區，感應信用卡或 Apple Pay 直接拍卡進站——不用買 Oyster 卡。', duration: '入境+進市區約 1.5 小時', map: 'Gatwick Airport' },
-        { time: '15:00', name: '朋友家放行李・會合', en: 'Drop Luggage', desc: '到朋友家安頓，記得帶台灣伴手禮！稍作休息後出門。', tips: '鳳梨酥、茶葉是英國留學圈最想念的味道' },
-        { time: '16:30', name: '南岸暖身散步・倫敦眼', en: 'South Bank & London Eye', desc: '中午就到的福利！和朋友沿泰晤士河南岸從倫敦眼散步到西敏橋，傍晚金色時刻拍大笨鐘，先把地標「預習」一遍。', price: '散步免費／倫敦眼 £29 起', duration: '2 小時', tube: 'Waterloo', book: { label: '倫敦眼購票', url: 'https://www.londoneye.com/tickets-and-prices/' }, map: 'London Eye, South Bank, London' },
-        { time: '19:00', name: '接風晚餐', en: 'Welcome Dinner', desc: '讓在地的朋友挑他的口袋名單！時差調整關鍵：撐到當地 21:00 再睡，隔天滿血開始。', tips: '南岸 Wahaca、Flat Iron 都是不踩雷選項' },
+        { time: '06:00', name: '桃園機場報到', en: 'TPE Check-in', desc: '08:00 起飛，06:00 前到 T1 報到。出發前 3 天以上完成 UK ETA 申請（£20）；托運行李額度（Light 票種）先在官網確認。', map: 'Taoyuan International Airport' },
+        { time: '08:00', name: '起飛 → 香港轉機', en: 'TPE → HKG', desc: '短程 2 小時到香港，轉機 3h25 同一航廈不趕不拖，吃個午餐再上長程段。', duration: '轉機 3 小時 25 分' },
+        { time: '13:25', name: '香港 → 倫敦（長程段）', en: 'HKG → LHR', desc: '14 小時 10 分：策略是「前段醒、後段睡」——落地是倫敦晚上，下機直接睡最順。機上把時錶調成倫敦時間。', duration: '總程 19 小時 35 分' },
+        { time: '20:35', name: '抵達希斯洛 T3', en: 'London Heathrow (LHR)', desc: '入境走 eGate（台灣護照適用，記得先辦好 ETA）。感應信用卡或 Apple Pay 直接拍卡進地鐵——不用買 Oyster 卡。', duration: '入境＋領行李約 1 小時', map: 'Heathrow Airport Terminal 3' },
+        { time: '22:30', name: '入住・直接睡覺', en: 'Check-in & Sleep', desc: '今晚唯一任務：睡。落地時間就是倫敦人的睡覺時間，是調時差的完美劇本，別滑手機到半夜。', tips: '在機場或住處旁便利商店買瓶水和明早的簡單早餐' },
       ],
-      rainNote: '下午的南岸散步遇雨改成：',
-      rainSpots: [
-        { time: '16:30', name: '柯芬園（有頂棚）暖身逛', en: 'Covent Garden', desc: '玻璃頂棚市集不怕雨，Apple Market、街頭藝人、周邊小店先感受倫敦氛圍，晚餐在 Seven Dials Market 室內美食街解決。', price: '免費', duration: '2.5 小時', tube: 'Covent Garden', map: 'Covent Garden Market, London' },
-      ],
+      rainNote: '移動日不受天氣影響。',
+      rainSpots: null,
       dayTips: ['行前必辦：UK ETA（官方 App 申請，£20，效期 2 年）', '英國插座為三孔 BS1363（G 型），記得帶轉接頭', '9 月倫敦約 11–19°C，早晚涼，帶薄外套 + 摺疊傘'],
     },
     {
-      id: 'd2', date: '9/8', weekday: '週二', title: '西敏經典：國會大廈・衛兵交接・國家美術館',
+      id: 'd2', date: '9/6', weekday: '週日', title: '週日限定：東區市集日（時差緩衝）',
+      theme: '🌸 花市與紅磚巷',
+      friend: '朋友早場（12:00–17:00）：白天單飛逛市集，晚上他下班一起吃晚餐——行程的第一次會合！',
+      stay: '自理住宿第 2 晚。',
+      transport: '地鐵＋步行：東區三個市集彼此步行可達（Old Street／Liverpool Street 站起步）。本日交通費約 £8–11（Zone 1–3 日上限封頂）。',
+      spots: [
+        { time: '09:30', name: '哥倫比亞路花市', en: 'Columbia Road Flower Market', desc: '只有週日早上才有的百年花市！整條維多利亞小街被鮮花淹沒，兩側全是獨立小店與咖啡館。今天不逛就要等下週——而你的行程只有這一個週日有空。', price: '免費', hours: '週日 08:00–15:00，越早人越少', duration: '1.5 小時', tube: 'Hoxton / Bethnal Green', map: 'Columbia Road Flower Market, London' },
+        { time: '11:30', name: '紅磚巷市集・午餐', en: 'Brick Lane Market', desc: '塗鴉、黑膠、古著、各國街頭小吃——東倫敦的靈魂。必吃：Beigel Bake 24 小時鹽醃牛肉貝果（£7 上下，排隊快）。', price: '免費入場', hours: '週日最熱鬧', duration: '2 小時', tube: 'Shoreditch High Street', map: 'Brick Lane, London' },
+        { time: '14:00', name: '老斯皮塔佛德市集', en: 'Old Spitalfields Market', desc: '維多利亞鑄鐵頂棚下的手作與設計市集，有頂棚不怕雨，順逛周邊 Shoreditch 塗鴉牆。', price: '免費入場', duration: '1.5 小時', tube: 'Liverpool Street', map: 'Old Spitalfields Market, London' },
+        { time: '16:00', name: '泰特現代 或 回住處補眠', en: 'Tate Modern / Rest', desc: '狀態好：搭地鐵到 Southwark 逛免費的泰特現代（10 樓觀景台免費看河景）；時差襲來就誠實回家瞇一小時，晚上才有精神。', price: '免費', duration: '2 小時', tube: 'Southwark / Blackfriars', map: 'Tate Modern, London' },
+        { time: '18:30', name: '與朋友晚餐', en: 'Dinner with Friend', desc: '朋友 17:00 下早場班——行程第一次會合！讓他挑口袋名單，順便拿到在地情報、對一下這兩週的計畫。', price: '£20–35／人', duration: '2 小時', tips: '正式接風晚餐留到明天朋友休假日，今晚輕鬆吃' },
+      ],
+      rainNote: '花市照常風雨無阻（帶傘）；大雨就把重心移到有頂棚的 Spitalfields 與泰特現代。',
+      rainSpots: null,
+      dayTips: ['時差第一天：行程刻意排鬆，累了就回家睡，別硬撐', '花市尾聲（14:30 後）花販會出清喊價，但好貨早上才有', 'Beigel Bake 只收現金？近年已可刷卡，但帶點現金保險'],
+    },
+    {
+      id: 'd3', date: '9/7', weekday: '週一', title: '朋友全休日：肯頓・櫻草丘・南岸・接風晚餐',
+      theme: '🤝 攝政公園軸線雙人行',
+      friend: '朋友今天全休！從市集逛到夜景，一整天同行——比原計畫的「接機半天」升級成完整版。',
+      stay: '自理住宿第 3 晚。',
+      transport: '地鐵 Camden Town 站起步，沿攝政公園步行軸線南下，傍晚移動到南岸。本日交通費約 £6–9。',
+      spots: [
+        { time: '10:30', name: '肯頓市集', en: 'Camden Market', desc: '龐克發源地的水岸市集：運河邊的 Camden Lock、馬廄市集的古董攤、上百家街頭小吃。倫敦最「不英國」的角落。', price: '免費入場', hours: '每日 10:00–18:00', duration: '2 小時', tube: 'Camden Town', map: 'Camden Market, London' },
+        { time: '12:30', name: '攝政運河散步 → 攝政公園', en: 'Regent\'s Canal & Regent\'s Park', desc: '沿運河步道從肯頓走進攝政公園（約 30 分鐘），穿過瑪麗皇后玫瑰園——9 月初玫瑰還在尾聲花期。', price: '免費', duration: '1.5 小時', map: 'Queen Mary\'s Rose Gardens, London' },
+        { time: '14:00', name: '櫻草丘看天際線', en: 'Primrose Hill', desc: '倫敦人最愛的野餐山丘，山頂一次看盡碎片大廈到倫敦眼的天際線——完全免費的百萬景觀，跟朋友坐著聊天曬太陽。', price: '免費', duration: '1 小時', tube: 'Chalk Farm', map: 'Primrose Hill, London' },
+        { time: '16:30', name: '南岸暖身散步・倫敦眼', en: 'South Bank & London Eye', desc: '地鐵到 Waterloo，沿泰晤士河南岸從倫敦眼散步到西敏橋，傍晚金色時刻拍大笨鐘，把明天起的地標先「預習」一遍。', price: '散步免費／倫敦眼 £29 起', duration: '2 小時', tube: 'Waterloo', book: { label: '倫敦眼購票', url: 'https://www.londoneye.com/tickets-and-prices/' }, map: 'London Eye, South Bank, London' },
+        { time: '19:00', name: '接風晚餐', en: 'Welcome Dinner', desc: '正式接風！讓在地的朋友挑他的口袋名單，記得把台灣伴手禮帶著給他。', tips: '南岸 Wahaca、Flat Iron 都是不踩雷選項；鳳梨酥、茶葉是英國留學圈最想念的味道' },
+      ],
+      rainNote: '雨天改室內版：',
+      rainSpots: [
+        { time: '10:30', name: '肯頓市集（大半有頂棚）', en: 'Camden Market', desc: '馬廄市集區多在室內，照逛。', price: '免費', duration: '2 小時', tube: 'Camden Town', map: 'Camden Market, London' },
+        { time: '13:30', name: 'V&A 博物館', en: 'V&A Museum', desc: '和朋友改逛世界最大裝飾藝術博物館（免費），中庭咖啡廳喝下午茶。', price: '免費', duration: '2.5 小時', tube: 'South Kensington', map: 'Victoria and Albert Museum, London' },
+        { time: '17:00', name: '柯芬園＋晚餐', en: 'Covent Garden', desc: '玻璃頂棚市集不怕雨，晚餐在 Seven Dials Market 室內美食街。', price: '免費', duration: '2.5 小時', tube: 'Covent Garden', map: 'Covent Garden Market, London' },
+      ],
+      dayTips: ['朋友全休日一共兩天（今天＋9/14 白崖），好好把握', '櫻草丘夕陽時段也很讚——若下午想多留肯頓，可把櫻草丘移到日落前', '明天開始進入景點主線：今晚回家先把西敏寺、衛兵交接的門票與時間確認一遍'],
+    },
+    {
+      id: 'd4', date: '9/8', weekday: '週二', title: '西敏經典：國會大廈・衛兵交接・國家美術館',
       theme: '🏛️ 倫敦必看首日',
       friend: '朋友白天有空（晚上有演出）：衛兵交接、國家美術館可同行，約 17:00 目送他去上班。',
-      stay: 'Travelodge Wimbledon Central 入住第 1 晚（9/8–9/13 共 5 晚，£352.95）。27–29 Hartfield Road SW19 3SG，Wimbledon 站步行 1 分鐘，District 線直達 Westminster 不用換車。',
+      stay: '自理住宿第 4 晚。District 線直達 Westminster 不用換車（Ealing／溫布頓皆同一條線）。',
       transport: '全天步行 + 地鐵。起點：Westminster 站（Jubilee / District / Circle 線）。本日交通費約 £5–7（景點間全步行，僅往返共 2–3 趟地鐵；日上限 £8.9 封頂）。',
       spots: [
         { time: '09:00', name: '大笨鐘與國會大廈', en: 'Big Ben & Houses of Parliament', desc: '西敏橋上拍大笨鐘全景，晨光角度最美。', price: '免費（外觀）', duration: '30 分鐘', tube: 'Westminster', map: 'Big Ben, London' },
@@ -49,10 +84,10 @@ window.TRIP = {
       dayTips: ['西敏寺週日不開放觀光，這天（週二）剛好', '💡 免費聽世界級詩班：17:00 的 Evensong 晚禱可免費進西敏寺本堂（不用門票！），時間允許可以再回頭體驗', '午餐省錢招：Tesco / Boots 的 Meal Deal 約 £4–5'],
     },
     {
-      id: 'd3', date: '9/9', weekday: '週三', title: '千年倫敦：倫敦塔・塔橋・波羅市場・聖保羅',
+      id: 'd5', date: '9/9', weekday: '週三', title: '千年倫敦：倫敦塔・塔橋・波羅市場・聖保羅',
       theme: '🏰 歷史與美食日',
       friend: '朋友雙場日（12:00–22:30）：今天單飛，好好當個歷史迷。',
-      stay: 'Travelodge Wimbledon Central（第 2 晚）。Wimbledon → Tower Hill District 線直達。今晚邦喬飛在溫布利球場開唱，那一帶飯店暴漲——溫布頓在西南邊，完全無感。',
+      stay: '自理住宿第 5 晚。District 線直達 Tower Hill。今晚邦喬飛在溫布利球場開唱，那一帶住宿暴漲——Ealing／溫布頓都不受影響。',
       transport: '地鐵至 Tower Hill 站起步，全天沿泰晤士河步行為主。本日交通費約 £5–7（沿河步行串點，僅 2–3 趟地鐵）。',
       spots: [
         { time: '09:00', name: '倫敦塔', en: 'Tower of London', desc: '看王冠珠寶（Crown Jewels）要一開門就衝，可省排隊 1 小時。別錯過 Yeoman Warder（皇家衛士）免費導覽，幽默又精彩。', price: '£34.8（線上）', hours: '週二至六 09:00–17:30', duration: '3 小時', tube: 'Tower Hill', book: { label: '官網訂票', url: 'https://www.hrp.org.uk/tower-of-london/visit/tickets-and-prices/' }, map: 'Tower of London' },
@@ -75,10 +110,10 @@ window.TRIP = {
       dayTips: ['倫敦塔 + 塔橋 + 聖保羅都排同一天門票不便宜（約 £75），預算有限可挑倫敦塔 + 其他免費景點', '不想付聖保羅門票？17:00 的 Evensong 晚禱可免費入內聽詩班（觀光參觀才收費）', '戲劇迷加碼：南岸的莎士比亞環球劇場站票只要 £5，體驗伊莉莎白式露天劇場', 'Padella 現在採虛擬排隊：到店掃 QR code 登記後先去逛市場，輪到會通知'],
     },
     {
-      id: 'd4', date: '9/10', weekday: '週四', title: '一日遊①：牛津大學城（全日深度版）',
+      id: 'd6', date: '9/10', weekday: '週四', title: '一日遊①：牛津大學城（全日深度版）',
       theme: '🎓 學院巡禮',
       friend: '朋友白天有空、晚上有演出：若他願意早起，牛津可同行——搭 16:00 回程火車，18:00 前回到倫敦來得及上班。',
-      stay: 'Travelodge Wimbledon Central（第 3 晚）。Wimbledon → Paddington 走 District 線，在 Earl’s Court 換 Edgware Road 方向的班次即達；07:50 的火車要抓好時間。',
+      stay: '自理住宿第 6 晚。往 Paddington：住 Ealing 搭 Elizabeth 線約 10 分鐘直達；住溫布頓走 District 線在 Earl’s Court 換乘。07:50 的火車要抓好時間。',
       transport: '去程：Paddington → Oxford 火車（直達約 1 小時，Advance 票 £6.5–10，提前買！）。牛津市區全程步行。本日交通費約 £18–25（火車來回 £13–20 ＋市區地鐵 £5）。',
       spots: [
         { time: '07:50', name: '搭火車前往牛津', en: 'Paddington → Oxford', desc: '提前 12 週釋票，Advance 票最低 £6.5。用 GWR 官網或 Trainline 買電子票。', price: '£6.5–10（Advance）', duration: '1 小時', book: { label: 'GWR 訂票', url: 'https://www.gwr.com' }, map: 'Oxford Railway Station' },
@@ -95,8 +130,8 @@ window.TRIP = {
       dayTips: ['火車 Advance 票綁定班次、不可退款，時間抓寬鬆一點', '嫌自助麻煩可跟團：KKday 有牛津+劍橋中文一日遊（約 NT$3,235），但自助搭火車更自由省錢', '🎭 魅影備選場次：17:15 回到 Paddington 後，趕 19:30 His Majesty’s Theatre 的晚場時間充裕（若 9/8 沒看成）'],
     },
     {
-      id: 'd5', date: '9/11', weekday: '週五', title: '大英博物館・9¾ 月台・晚上看朋友的演出',
-      stay: 'Travelodge Wimbledon Central（第 4 晚）。看完朋友的演出、在 stage door 等到他之後，記得今晚是回溫布頓、不是回他家。末班車時間先查好。',
+      id: 'd7', date: '9/11', weekday: '週五', title: '大英博物館・9¾ 月台・晚上看朋友的演出',
+      stay: '自理住宿第 7 晚。看完朋友的演出、在 stage door 等到他之後，記得今晚是回自己住處、不是回他家。末班車時間先查好。',
       theme: '🎭 文明瑰寶與朋友的舞台',
       friend: '今晚是重頭戲：去朋友的劇院看他的演出！晚上不排其他行程，散場等他一起回家。',
       transport: '地鐵為主：Tottenham Court Road → King’s Cross → Covent Garden → 劇院區。本日交通費約 £6–9（3–4 趟地鐵，日上限 £8.9 封頂）。',
@@ -113,10 +148,10 @@ window.TRIP = {
       dayTips: ['想另外看音樂劇（獅子王／Wicked／歌劇魅影）可挑其他晚上，用 TodayTix 搶 £25 專區票', '哈利波特迷加碼：舞台劇《被詛咒的孩子》兩部曲版本 2026/9 是最後檔期，可考慮週六日場', '大英博物館旁加碼：Sir John Soane’s Museum（免費、週三至日開），建築師故居塞滿古董的「藏品迷宮」', '哈迷場景補完：Australia House（古靈閣內景，只能看外觀）在 Temple 站附近', '週五大英博物館開到 20:30，白天行程可自由延長'],
     },
     {
-      id: 'd6', date: '9/12', weekday: '週六', title: '一日遊②：科茲窩鄉村 或 溫莎巨石陣巴斯（二選一）',
+      id: 'd8', date: '9/12', weekday: '週六', title: '一日遊②：科茲窩鄉村 或 溫莎巨石陣巴斯（二選一）',
       theme: '🏡 鄉村美景 vs 🏰 三大經典',
       friend: '朋友雙場日：單飛跟團剛剛好，晚上 22:30 後才見得到他。',
-      stay: 'Travelodge Wimbledon Central（最後一晚，明早退房）。07:30 要到 Victoria 旁的 Grosvenor Gardens 集合：Wimbledon → Victoria District 線直達約 25 分鐘，抓 06:45 出門。',
+      stay: '自理住宿第 8 晚（最後一晚，明早退房）。07:30 要到 Victoria 旁的 Grosvenor Gardens 集合：District 線直達 Victoria（Ealing 約 35 分／溫布頓約 25 分），抓 06:35 出門。',
       transport: '兩個方案都是跟團、Victoria 周邊集合，全程遊覽車不用研究班次。用下方分頁切換比較，決定後再訂（兩團都可免費取消，也可以都先卡位）。本日交通費約 £5（車資含在團費，僅往返集合點地鐵）。',
       spots: [
         { time: '08:15', name: '方案A：科茲窩跟團出發', en: 'Cotswolds Tour', desc: '推薦團（原推薦 KKday 團已售罄，以下有位）：① 史特拉福＋科茲窩含拜伯里 NT$3,839（4.4 分、1K+ 訂購，加碼莎士比亞故居）② 中文團科茲窩雙線 NT$2,696（4.5 分）③ Golden Tours £75.65 含兩道式午餐（英文）。', price: 'NT$2,696–3,839／£75.65', duration: '全日約 10–11 小時', book: { label: 'KKday 科茲窩團列表', url: 'https://www.kkday.com/zh-tw/product/productlist?keyword=%E7%A7%91%E8%8C%B2%E7%AA%A9' }, map: 'Victoria Coach Station, London' },
@@ -141,10 +176,10 @@ window.TRIP = {
       dayTips: ['兩團都可提前免費取消（A 團 3–4 天前／B 團 3 天前）——不確定就兩個都先卡位，出發前留一個', '若選方案 B：溫莎和 D8 的雨天備案重複，屆時 D8 雨天改去邱吉爾戰時密室或 Frameless', '自助火車版科茲窩仍可行：Paddington → Moreton-in-Marsh + 801 公車（來回約 £35–45，少了拜伯里但時間自主）'],
     },
     {
-      id: 'd7', date: '9/13', weekday: '週日', title: '一日遊③：哈利波特影城＋週日烤肉之夜',
+      id: 'd9', date: '9/13', weekday: '週日', title: '一日遊③：哈利波特影城＋週日烤肉之夜',
       theme: '⚡ 魔法世界朝聖',
       friend: '朋友早場（12:00–17:00）：你白天進影城，傍晚他下班正好會合吃 Sunday Roast！',
-      stay: '⚠️ 今天換宿：早上退房後行李寄放（Travelodge 櫃檯或 Wimbledon 站 Stasher／Radical Storage），晚餐後搬回朋友家住到 9/16。影城要帶著行李不方便，務必先寄放。',
+      stay: '⚠️ 今天換宿：早上退房後行李寄放（問房東可否寄放到晚上，或用 Stasher／Radical Storage 寄物點），晚餐後搬去朋友家住到 9/16。影城要帶著行李不方便，務必先寄放。',
       transport: 'Euston → Watford Junction 火車（直達 20 分鐘，£13.4，可感應付款）→ 官方接駁巴士 15 分鐘（出示影城門票免費搭）。本日交通費約 £20–32（影城火車來回＋市區地鐵）。',
       spots: [
         { time: '09:00', name: '火車前往 Watford Junction', en: 'Euston → Watford Junction', desc: '車站外跟著指標搭哈利波特彩繪接駁車，每 30 分鐘一班。', price: '火車 £13.4 + 接駁免費', duration: '40 分鐘', map: 'Watford Junction Station' },
@@ -157,7 +192,7 @@ window.TRIP = {
       dayTips: ['影城門票含中文語音導覽選項', '影城內餐點普通偏貴，可先吃早午餐再進場', 'Sunday Roast 熱門店週日會滿，提早幾天訂位'],
     },
     {
-      id: 'd8', date: '9/14', weekday: '週一', title: '一日遊④：七姊妹白崖（朋友休假日・全天同行！）',
+      id: 'd10', date: '9/14', weekday: '週一', title: '一日遊④：七姊妹白崖（朋友休假日・全天同行！）',
       theme: '🤝 白崖健行雙人行',
       friend: '朋友全天休假——本週最重要的同行日！一起去看英格蘭最震撼的海岸線。',
       stay: '住朋友家（9/13–9/16 這 4 晚）。',
@@ -182,7 +217,7 @@ window.TRIP = {
       dayTips: ['中文團出發前 2–4 天可免費取消，可先卡位、看天氣預報再決定', '崖頂無圍欄，拍照離邊緣至少 5 公尺', '白崖風大，防風外套必備'],
     },
     {
-      id: 'd9', date: '9/15', weekday: '週二', title: '南肯辛頓博物館・英式下午茶・牛津街購物',
+      id: 'd11', date: '9/15', weekday: '週二', title: '南肯辛頓博物館・英式下午茶・牛津街購物',
       theme: '🫖 優雅倫敦日',
       friend: '朋友白天有空：博物館＋下午茶可同行，17:00 過後他去上班、你繼續購物。',
       transport: '地鐵 South Kensington 站起步（地下通道直達博物館），下午移動到 Soho / 牛津街。本日交通費約 £6–9（多為步行＋2–3 趟地鐵，遠低於日上限）。',
@@ -199,7 +234,7 @@ window.TRIP = {
       dayTips: ['博物館雖免費，仍建議官網預約免排隊', '購物段兩個免費文青繞路：Wallace Collection 華勒斯典藏館（貴族宅邸美術館，10:00–17:00，Bond St 旁）與 Daunt Books 敦特書店（倫敦最美書店，Marylebone）', '晚餐後還有力氣？搭兩站到 Chalk Farm 上櫻草丘（Primrose Hill）看免費天際線夜景', '倫敦紀念品最划算的在超市：茶葉（Twinings / F&M）、餅乾、巧克力'],
     },
     {
-      id: 'd10', date: '9/16', weekday: '週三', title: '格林威治半日遊・肯辛頓宮・最後採買',
+      id: 'd12', date: '9/16', weekday: '週三', title: '格林威治半日遊・肯辛頓宮・最後採買',
       theme: '🚢 子午線與宮殿',
       friend: '朋友雙場日：最後的單飛日，把想逛的補完。',
       transport: '上午：Uber Boat 遊船（Tower Pier → Greenwich，約 30 分鐘，App 購票較便宜）。下午地鐵回市區。本日交通費約 £14–18（遊船單程 £6.2 起＋DLR/地鐵數趟）。',
@@ -216,19 +251,20 @@ window.TRIP = {
         { time: '10:00', name: '肯辛頓宮＋自然史補完', en: 'Kensington Palace', desc: '宮殿全室內；還沒逛夠的南肯辛頓博物館群也在附近。', price: '£24.7', duration: '3 小時', tube: 'High Street Kensington', map: 'Kensington Palace, London' },
         { time: '14:00', name: '利柏堤百貨＆攝政街室內採買', en: 'Liberty & Regent Street', desc: '室內購物補貨：茶葉、圍巾、伴手禮，順便打包前最後巡禮。', price: '免費入場', duration: '2.5 小時', tube: 'Oxford Circus', map: 'Liberty London' },
       ],
-      dayTips: ['行李秤一下：阿聯酋經濟艙托運通常 25–35kg（依票種），伴手禮買太多要留意', '液體（酒、醬料）記得放托運', '🎭 魅影最終備選場：今晚 19:30 可當「道別倫敦」壓軸（週三另有 14:30 午場），但隔天要飛、自己衡量體力'],
+      dayTips: ['行李秤一下：國泰「輕便 Light」票種托運通常僅 1 件 23kg——伴手禮買太多先上官網加購行李，比機場現場便宜', '液體（酒、醬料）記得放托運', '🎭 魅影最終備選場：今晚 19:30 可當「道別倫敦」壓軸（週三另有 14:30 午場），明天班機是晚上 20:15、看完隔天睡到自然醒也來得及'],
     },
     {
-      id: 'd11', date: '9/17', weekday: '週四', title: '道別倫敦 → 台北（9/18 抵達）',
-      theme: '🏠 返程日',
-      friend: '朋友白天有空：可以一起吃告別早午餐，甚至送你到車站。',
-      transport: '前往蓋威克 LGW：Thameslink（約 £15）或 Victoria 搭 Gatwick Express（30 分鐘直達）。國際線起飛前 3 小時到機場。本日交通費約 £18–24（市區地鐵＋機場線）。',
+      id: 'd13', date: '9/17', weekday: '週四', title: '道別倫敦 → 台北（晚班機，最後一天很完整）',
+      theme: '🏠 返程日・20:15 起飛',
+      friend: '朋友白天有空：告別早午餐一路聊到下午，甚至送你上地鐵。',
+      transport: '前往希斯洛 LHR T3：Piccadilly 線直達（住朋友家依位置約 50–70 分）或 Paddington 搭 Elizabeth 線。20:15 起飛，17:15 前到機場報到。本日交通費約 £6–14。',
       spots: [
-        { time: '09:30', name: '告別早午餐（與朋友）', en: 'Farewell Brunch', desc: '和朋友吃頓悠閒的英式早午餐道別——Full English Breakfast 畫下句點。附近咖啡館或 Dishoom 都好。', price: '£12–20／人', duration: '1.5 小時', map: 'Dishoom Covent Garden, London' },
-        { time: '11:30', name: '前往蓋威克機場', en: 'To Gatwick', desc: '取行李出發（依票面起飛時間回推 3 小時到機場；若是傍晚班機，上午還能加碼一個小景點）。', price: '£15–21.3', duration: '1.5 小時', map: 'Gatwick Airport' },
-        { time: '依票面', name: '起飛 → 杜拜 → 台北', en: 'LGW → DXB → TPE', desc: '阿聯酋經杜拜轉機，9/18（五）抵達桃園。回程時差訣竅：抵台當天撐到晚上再睡。', map: 'Gatwick Airport' },
+        { time: '10:00', name: '告別早午餐（與朋友）', en: 'Farewell Brunch', desc: '晚班機的福利：和朋友吃頓不趕時間的英式早午餐——Full English Breakfast 畫下句點。附近咖啡館或 Dishoom 都好。', price: '£12–20／人', duration: '1.5 小時', map: 'Dishoom Covent Garden, London' },
+        { time: '12:00', name: '最後採買・補遺珠', en: 'Last Shopping', desc: '下午還有 4 小時可用：超市補伴手禮、攝政街補貨，或把這兩週的遺珠（Sky Garden、肯辛頓宮、某間沒吃到的店）補掉一個。', price: '依內容', duration: '3 小時', map: 'Oxford Street, London' },
+        { time: '16:00', name: '回朋友家取行李 → 出發機場', en: 'To Heathrow', desc: '取行李搭 Piccadilly 線直達 LHR T3（或 Elizabeth 線轉乘），17:15 前抵達報到。行李超過 23kg 的話，先把重物移到隨身包。', price: '£5.6–13.9', duration: '1–1.5 小時', map: 'Heathrow Airport Terminal 3' },
+        { time: '20:15', name: 'CX256 起飛 → 香港 → 台北', en: 'LHR → HKG → TPE', desc: 'A350 長程段睡覺剛好；香港轉機 2h30（同一張票，誤點國泰負責改班）。9/18（五）20:05 抵達桃園。回程時差訣竅：機上第二段少睡，抵台當晚正常時間睡。', map: 'Heathrow Airport Terminal 3' },
       ],
-      dayTips: ['英國已無購物退稅，別在機場排隊找退稅櫃台（沒有這服務了）', '茶葉、肉品入境台灣規定先查關務署，火腿臘腸類不能帶'],
+      dayTips: ['英國已無購物退稅，別在機場排隊找退稅櫃台（沒有這服務了）', '茶葉、肉品入境台灣規定先查關務署，火腿臘腸類不能帶', '機場 Hamleys／World Duty Free 可做最後補貨，但價格通常比市區貴'],
     },
   ],
 };
