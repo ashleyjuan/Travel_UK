@@ -238,7 +238,7 @@ window.TRIP = {
       id: 'd12', date: '9/16', weekday: '週三', title: '格林威治半日遊・肯辛頓宮・最後採買',
       theme: '🚢 子午線與宮殿',
       friend: '朋友雙場日：最後的單飛日，把想逛的補完。',
-      stay: '⚠️ 換宿日：早上 10:00 前從 Fulham 退房 → 行李寄放（Stasher／Radical Storage 寄物點，或問朋友可否先放他家）→ 晚上住朋友家告別前夜。⚠️ 這一晚需先跟朋友確認能收留（等於朋友家前段 6 晚＋末晚共 7 晚）；若不方便，改把 Fulham 延訂一晚到 9/17（約 £85）或另訂機場旁一晚。',
+      stay: '⚠️ 換宿日：早上 10:00 前從 Fulham 退房 → 行李寄放或直接送朋友家 → 晚上住朋友家（告別前夜，已確認）。今晚起到回程都在朋友家，行李歸位、開始打包。',
       transport: '上午：Uber Boat 遊船（Tower Pier → Greenwich，約 30 分鐘，App 購票較便宜）。下午地鐵回市區。本日交通費約 £14–18（遊船單程 £6.2 起＋DLR/地鐵數趟）。',
       spots: [
         { time: '09:00', name: 'Uber Boat 泰晤士河遊船', en: 'Uber Boat to Greenwich', desc: '從水上看塔橋與金絲雀碼頭天際線，兼具交通與觀光。App 或線上購票比現場便宜。', price: '單程約 £6.2 起', duration: '40 分鐘', book: { label: '購票', url: 'https://www.thamesclippers.com/plan-your-journey/ticket-information' }, map: 'Tower Millennium Pier, London' },
