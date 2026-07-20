@@ -7,8 +7,8 @@ window.TRIP = {
       id: 'd1', date: '9/5', weekday: '週六', title: '啟程：台北 → 香港 → 倫敦（晚上抵達）',
       theme: '✈️ 國泰 CX407＋CX253・已開票',
       friend: '今天不會見到朋友——晚上才落地，入住後傳個訊息報平安，約好明晚見。',
-      stay: '自理住宿第 1 晚（9/5–9/13 共 8 晚，首選 Ealing 私人套房 Airbnb——見總覽住宿卡）。⚠️ 抵達住處約 22:30，訂房時務必先跟房東確認深夜入住方式。',
-      transport: 'CX407 台北 08:00 → 香港 10:00・轉機 3h25 → CX253 13:25 → 倫敦希斯洛 LHR T3 當晚 20:35。進市區：Piccadilly 線直達 Ealing Common／市中心沿線（約 £5.6）或 Elizabeth 線 30 分鐘到 Paddington（約 £13.9）。本日交通費約 £6–14。',
+      stay: '住朋友家第 1 晚（9/5–9/11 共 6 晚）。⚠️ 約 22:45 才到，但住朋友家沒有商業入住時限——先跟朋友約好鑰匙／密碼，或等他看完週六場（22:30 下班）回來會合。',
+      transport: 'CX407 台北 08:00 → 香港 10:00・轉機 3h25 → CX253 13:25 → 倫敦希斯洛 LHR T3 當晚 20:35。從機場到朋友家：Piccadilly 線直達市中心沿線（約 £5.6）或 Elizabeth 線 30 分鐘到 Paddington（約 £13.9）再轉乘，實際末段依朋友家位置。本日交通費約 £6–14。',
       spots: [
         { time: '06:00', name: '桃園機場報到', en: 'TPE Check-in', desc: '08:00 起飛，06:00 前到 T1 報到。出發前 3 天以上完成 UK ETA 申請（£20）；托運行李額度（Light 票種）先在官網確認。', map: 'Taoyuan International Airport' },
         { time: '08:00', name: '起飛 → 香港轉機', en: 'TPE → HKG', desc: '短程 2 小時到香港，轉機 3h25 同一航廈不趕不拖，吃個午餐再上長程段。', duration: '轉機 3 小時 25 分' },
@@ -24,7 +24,7 @@ window.TRIP = {
       id: 'd2', date: '9/6', weekday: '週日', title: '週日限定：東區市集日（時差緩衝）',
       theme: '🌸 花市與紅磚巷',
       friend: '朋友早場（12:00–17:00）：白天單飛逛市集，晚上他下班一起吃晚餐——行程的第一次會合！',
-      stay: '自理住宿第 2 晚。',
+      stay: '住朋友家第 2 晚。',
       transport: '地鐵＋步行：東區三個市集彼此步行可達（Old Street／Liverpool Street 站起步）。本日交通費約 £8–11（Zone 1–3 日上限封頂）。',
       spots: [
         { time: '09:30', name: '哥倫比亞路花市', en: 'Columbia Road Flower Market', desc: '只有週日早上才有的百年花市！整條維多利亞小街被鮮花淹沒，兩側全是獨立小店與咖啡館。今天不逛就要等下週——而你的行程只有這一個週日有空。', price: '免費', hours: '週日 08:00–15:00，越早人越少', duration: '1.5 小時', tube: 'Hoxton / Bethnal Green', map: 'Columbia Road Flower Market, London' },
@@ -41,7 +41,7 @@ window.TRIP = {
       id: 'd3', date: '9/7', weekday: '週一', title: '朋友全休日：肯頓・櫻草丘・南岸・接風晚餐',
       theme: '🤝 攝政公園軸線雙人行',
       friend: '朋友今天全休！從市集逛到夜景，一整天同行——比原計畫的「接機半天」升級成完整版。',
-      stay: '自理住宿第 3 晚。',
+      stay: '住朋友家第 3 晚。',
       transport: '地鐵 Camden Town 站起步，沿攝政公園步行軸線南下，傍晚移動到南岸。本日交通費約 £6–9。',
       spots: [
         { time: '10:30', name: '肯頓市集', en: 'Camden Market', desc: '龐克發源地的水岸市集：運河邊的 Camden Lock、馬廄市集的古董攤、上百家街頭小吃。倫敦最「不英國」的角落。', price: '免費入場', hours: '每日 10:00–18:00', duration: '2 小時', tube: 'Camden Town', map: 'Camden Market, London' },
@@ -62,7 +62,7 @@ window.TRIP = {
       id: 'd4', date: '9/8', weekday: '週二', title: '西敏經典：國會大廈・衛兵交接・國家美術館',
       theme: '🏛️ 倫敦必看首日',
       friend: '朋友白天有空（晚上有演出）：衛兵交接、國家美術館可同行，約 17:00 目送他去上班。',
-      stay: '自理住宿第 4 晚。District 線直達 Westminster 不用換車（Ealing／溫布頓皆同一條線）。',
+      stay: '住朋友家第 4 晚。',
       transport: '全天步行 + 地鐵。起點：Westminster 站（Jubilee / District / Circle 線）。本日交通費約 £5–7（景點間全步行，僅往返共 2–3 趟地鐵；日上限 £8.9 封頂）。',
       spots: [
         { time: '09:00', name: '大笨鐘與國會大廈', en: 'Big Ben & Houses of Parliament', desc: '西敏橋上拍大笨鐘全景，晨光角度最美。', price: '免費（外觀）', duration: '30 分鐘', tube: 'Westminster', map: 'Big Ben, London' },
@@ -87,7 +87,7 @@ window.TRIP = {
       id: 'd5', date: '9/9', weekday: '週三', title: '千年倫敦：倫敦塔・塔橋・波羅市場・聖保羅',
       theme: '🏰 歷史與美食日',
       friend: '朋友雙場日（12:00–22:30）：今天單飛，好好當個歷史迷。',
-      stay: '自理住宿第 5 晚。District 線直達 Tower Hill。今晚邦喬飛在溫布利球場開唱，那一帶住宿暴漲——Ealing／溫布頓都不受影響。',
+      stay: '住朋友家第 5 晚。今晚邦喬飛在溫布利球場開唱，那一帶住宿暴漲——跟你住的地方無關。',
       transport: '地鐵至 Tower Hill 站起步，全天沿泰晤士河步行為主。本日交通費約 £5–7（沿河步行串點，僅 2–3 趟地鐵）。',
       spots: [
         { time: '09:00', name: '倫敦塔', en: 'Tower of London', desc: '看王冠珠寶（Crown Jewels）要一開門就衝，可省排隊 1 小時。別錯過 Yeoman Warder（皇家衛士）免費導覽，幽默又精彩。', price: '£34.8（線上）', hours: '週二至六 09:00–17:30', duration: '3 小時', tube: 'Tower Hill', book: { label: '官網訂票', url: 'https://www.hrp.org.uk/tower-of-london/visit/tickets-and-prices/' }, map: 'Tower of London' },
@@ -113,7 +113,7 @@ window.TRIP = {
       id: 'd6', date: '9/10', weekday: '週四', title: '一日遊①：牛津大學城（全日深度版）',
       theme: '🎓 學院巡禮',
       friend: '朋友白天有空、晚上有演出：若他願意早起，牛津可同行——搭 16:00 回程火車，18:00 前回到倫敦來得及上班。',
-      stay: '自理住宿第 6 晚。往 Paddington：住 Ealing 搭 Elizabeth 線約 10 分鐘直達；住溫布頓走 District 線在 Earl’s Court 換乘。07:50 的火車要抓好時間。',
+      stay: '住朋友家第 6 晚（最後一晚，明早帶行李搬去 Fulham）。今天去牛津，07:50 的火車要抓好時間。',
       transport: '去程：Paddington → Oxford 火車（直達約 1 小時，Advance 票 £6.5–10，提前買！）。牛津市區全程步行。本日交通費約 £18–25（火車來回 £13–20 ＋市區地鐵 £5）。',
       spots: [
         { time: '07:50', name: '搭火車前往牛津', en: 'Paddington → Oxford', desc: '提前 12 週釋票，Advance 票最低 £6.5。用 GWR 官網或 Trainline 買電子票。', price: '£6.5–10（Advance）', duration: '1 小時', book: { label: 'GWR 訂票', url: 'https://www.gwr.com' }, map: 'Oxford Railway Station' },
@@ -131,7 +131,7 @@ window.TRIP = {
     },
     {
       id: 'd7', date: '9/11', weekday: '週五', title: '大英博物館・9¾ 月台・晚上看朋友的演出',
-      stay: '自理住宿第 7 晚。看完朋友的演出、在 stage door 等到他之後，記得今晚是回自己住處、不是回他家。末班車時間先查好。',
+      stay: '⚠️ 換宿日：早上帶行李離開朋友家 → Boutique Studios Fulham（Fulham Broadway，入住 15:00 起，先傳訊問可否早寄放行李）。Fulham 第 1 晚。看完朋友演出、在 stage door 等到他之後，記得今晚是回 Fulham、不是回他家。末班車時間先查好。',
       theme: '🎭 文明瑰寶與朋友的舞台',
       friend: '今晚是重頭戲：去朋友的劇院看他的演出！晚上不排其他行程，散場等他一起回家。',
       transport: '地鐵為主：Tottenham Court Road → King’s Cross → Covent Garden → 劇院區。本日交通費約 £6–9（3–4 趟地鐵，日上限 £8.9 封頂）。',
@@ -151,7 +151,7 @@ window.TRIP = {
       id: 'd8', date: '9/12', weekday: '週六', title: '一日遊②：科茲窩鄉村 或 溫莎巨石陣巴斯（二選一）',
       theme: '🏡 鄉村美景 vs 🏰 三大經典',
       friend: '朋友雙場日：單飛跟團剛剛好，晚上 22:30 後才見得到他。',
-      stay: '自理住宿第 8 晚（最後一晚，明早退房）。07:30 要到 Victoria 旁的 Grosvenor Gardens 集合：District 線直達 Victoria（Ealing 約 35 分／溫布頓約 25 分），抓 06:35 出門。',
+      stay: 'Fulham 第 2 晚（不用退房，續住到 9/16）。07:30 要到 Victoria 旁的 Grosvenor Gardens 集合：Fulham Broadway 走 District 線直達 Victoria 約 15 分，抓 06:55 出門。',
       transport: '兩個方案都是跟團、Victoria 周邊集合，全程遊覽車不用研究班次。用下方分頁切換比較，決定後再訂（兩團都可免費取消，也可以都先卡位）。本日交通費約 £5（車資含在團費，僅往返集合點地鐵）。',
       spots: [
         { time: '08:15', name: '方案A：科茲窩跟團出發', en: 'Cotswolds Tour', desc: '推薦團（原推薦 KKday 團已售罄，以下有位）：① 史特拉福＋科茲窩含拜伯里 NT$3,839（4.4 分、1K+ 訂購，加碼莎士比亞故居）② 中文團科茲窩雙線 NT$2,696（4.5 分）③ Golden Tours £75.65 含兩道式午餐（英文）。', price: 'NT$2,696–3,839／£75.65', duration: '全日約 10–11 小時', book: { label: 'KKday 科茲窩團列表', url: 'https://www.kkday.com/zh-tw/product/productlist?keyword=%E7%A7%91%E8%8C%B2%E7%AA%A9' }, map: 'Victoria Coach Station, London' },
@@ -179,7 +179,7 @@ window.TRIP = {
       id: 'd9', date: '9/13', weekday: '週日', title: '一日遊③：哈利波特影城＋週日烤肉之夜',
       theme: '⚡ 魔法世界朝聖',
       friend: '朋友早場（12:00–17:00）：你白天進影城，傍晚他下班正好會合吃 Sunday Roast！',
-      stay: '⚠️ 今天換宿：早上退房後行李寄放（問房東可否寄放到晚上，或用 Stasher／Radical Storage 寄物點），晚餐後搬去朋友家住到 9/16。影城要帶著行李不方便，務必先寄放。',
+      stay: 'Fulham 第 3 晚（今天不用換宿，行李都在 Fulham）。影城日輕鬆，晚上跟朋友吃完 Sunday Roast 後回 Fulham。',
       transport: 'Euston → Watford Junction 火車（直達 20 分鐘，£13.4，可感應付款）→ 官方接駁巴士 15 分鐘（出示影城門票免費搭）。本日交通費約 £20–32（影城火車來回＋市區地鐵）。',
       spots: [
         { time: '09:00', name: '火車前往 Watford Junction', en: 'Euston → Watford Junction', desc: '車站外跟著指標搭哈利波特彩繪接駁車，每 30 分鐘一班。', price: '火車 £13.4 + 接駁免費', duration: '40 分鐘', map: 'Watford Junction Station' },
@@ -195,7 +195,7 @@ window.TRIP = {
       id: 'd10', date: '9/14', weekday: '週一', title: '一日遊④：七姊妹白崖（朋友休假日・全天同行！）',
       theme: '🤝 白崖健行雙人行',
       friend: '朋友全天休假——本週最重要的同行日！一起去看英格蘭最震撼的海岸線。',
-      stay: '住朋友家（9/13–9/16 這 4 晚）。',
+      stay: 'Fulham 第 4 晚。',
       transport: '自助：Victoria → Seaford 火車（Lewes 轉車一次，約 1.5 小時，來回約 £25–32）。或跟中文團（超便宜）：KKday「陪爬陪拍」團 NT$1,228、Klook 版 NT$1,036。本日交通費：自助約 £37–44（火車來回＋沿海公車一日券 £9＋市區地鐵）／跟團約 £5。',
       spots: [
         { time: '08:00', name: '火車 Victoria → Seaford', en: 'London Victoria → Seaford', desc: '和朋友一起搭火車南下，在 Lewes 轉車一次。', price: '來回約 £25–32', duration: '1.5 小時', book: { label: 'Southern 訂票', url: 'https://www.southernrailway.com' }, map: 'Seaford Station' },
@@ -220,6 +220,7 @@ window.TRIP = {
       id: 'd11', date: '9/15', weekday: '週二', title: '南肯辛頓博物館・英式下午茶・牛津街購物',
       theme: '🫖 優雅倫敦日',
       friend: '朋友白天有空：博物館＋下午茶可同行，17:00 過後他去上班、你繼續購物。',
+      stay: 'Fulham 第 5 晚（最後一晚，明早 10:00 前退房）。今晚先把行李整理好，明天要換宿。',
       transport: '地鐵 South Kensington 站起步（地下通道直達博物館），下午移動到 Soho / 牛津街。本日交通費約 £6–9（多為步行＋2–3 趟地鐵，遠低於日上限）。',
       spots: [
         { time: '10:00', name: '自然史博物館', en: 'Natural History Museum', desc: '哥德式「動物大教堂」建築本身就是景點，藍鯨骨架大廳、恐龍展廳、地震體驗，免費！', price: '免費', hours: '10:00–17:50', duration: '2 小時', tube: 'South Kensington', book: { label: '免費預約', url: 'https://www.nhm.ac.uk/visit.html' }, map: 'Natural History Museum, London' },
@@ -237,6 +238,7 @@ window.TRIP = {
       id: 'd12', date: '9/16', weekday: '週三', title: '格林威治半日遊・肯辛頓宮・最後採買',
       theme: '🚢 子午線與宮殿',
       friend: '朋友雙場日：最後的單飛日，把想逛的補完。',
+      stay: '⚠️ 換宿日：早上 10:00 前從 Fulham 退房 → 行李寄放（Stasher／Radical Storage 寄物點，或問朋友可否先放他家）→ 晚上住朋友家告別前夜。⚠️ 這一晚需先跟朋友確認能收留（等於朋友家前段 6 晚＋末晚共 7 晚）；若不方便，改把 Fulham 延訂一晚到 9/17（約 £85）或另訂機場旁一晚。',
       transport: '上午：Uber Boat 遊船（Tower Pier → Greenwich，約 30 分鐘，App 購票較便宜）。下午地鐵回市區。本日交通費約 £14–18（遊船單程 £6.2 起＋DLR/地鐵數趟）。',
       spots: [
         { time: '09:00', name: 'Uber Boat 泰晤士河遊船', en: 'Uber Boat to Greenwich', desc: '從水上看塔橋與金絲雀碼頭天際線，兼具交通與觀光。App 或線上購票比現場便宜。', price: '單程約 £6.2 起', duration: '40 分鐘', book: { label: '購票', url: 'https://www.thamesclippers.com/plan-your-journey/ticket-information' }, map: 'Tower Millennium Pier, London' },
@@ -257,6 +259,7 @@ window.TRIP = {
       id: 'd13', date: '9/17', weekday: '週四', title: '道別倫敦 → 台北（晚班機，最後一天很完整）',
       theme: '🏠 返程日・20:15 起飛',
       friend: '朋友白天有空：告別早午餐一路聊到下午，甚至送你上地鐵。',
+      stay: '早上從朋友家出發（行李已在他家）。晚班機的好處：白天全部可用。',
       transport: '前往希斯洛 LHR T3：Piccadilly 線直達（住朋友家依位置約 50–70 分）或 Paddington 搭 Elizabeth 線。20:15 起飛，17:15 前到機場報到。本日交通費約 £6–14。',
       spots: [
         { time: '10:00', name: '告別早午餐（與朋友）', en: 'Farewell Brunch', desc: '晚班機的福利：和朋友吃頓不趕時間的英式早午餐——Full English Breakfast 畫下句點。附近咖啡館或 Dishoom 都好。', price: '£12–20／人', duration: '1.5 小時', map: 'Dishoom Covent Garden, London' },
