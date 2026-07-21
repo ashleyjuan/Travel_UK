@@ -226,7 +226,7 @@ window.TRIP = {
       dayTips: ['博物館雖免費，仍建議官網預約免排隊', '購物段兩個免費文青繞路：Wallace Collection 華勒斯典藏館（貴族宅邸美術館，10:00–17:00，Bond St 旁）與 Daunt Books 敦特書店（倫敦最美書店，Marylebone）', '晚餐後還有力氣？搭兩站到 Chalk Farm 上櫻草丘（Primrose Hill）看免費天際線夜景', '倫敦紀念品最划算的在超市：茶葉（Twinings / F&M）、餅乾、巧克力'],
     },
     {
-      id: 'd12', date: '9/16', weekday: '週三', title: '格林威治半日遊・肯辛頓宮・最後採買',
+      id: 'd12', date: '9/16', weekday: '週三', title: '格林威治半日遊・肯辛頓宮・Flat Iron 告別牛排',
       theme: '🚢 子午線與宮殿',
       friend: '朋友雙場日：最後的單飛日，把想逛的補完。',
       stay: '⚠️ 換宿日：早上 10:00 前從 Fulham 退房 → 行李寄放或直接送朋友家 → 晚上住朋友家（告別前夜，已確認）。今晚起到回程都在朋友家，行李歸位、開始打包。',
@@ -237,14 +237,15 @@ window.TRIP = {
         { time: '11:30', name: '舊皇家海軍學院・皇后宅邸鬱金香梯', en: 'Old Royal Naval College & Queen\'s House', desc: '天文台下山途經——《雷神索爾》《加勒比海盜》都在這取景，巴洛克雙塔園區免費進入；旁邊免費的 Queen’s House 有全倫敦最好拍的 Tulip Stairs 藍色螺旋梯，別錯過！', price: '園區與皇后宅邸免費／Painted Hall 約 £15', duration: '45 分鐘', map: 'Queen\'s House, Greenwich' },
         { time: '12:15', name: '格林威治市集・午餐', en: 'Greenwich Market', desc: '有頂棚的百年手作市集（每日開放），各國小吃便宜好吃，順便買紀念品。卡蒂薩克號帆船在旁邊可看外觀。', price: '免費入場', duration: '1.5 小時', map: 'Greenwich Market, London' },
         { time: '14:00', name: '肯辛頓宮', en: 'Kensington Palace', desc: '黛安娜王妃故居，今天（週三）有開！State Apartments 與特展。時間不夠或想省門票就改逛海德公園。', price: '£24.7（線上）', hours: '週三至日 10:00–18:00', duration: '2 小時', tube: 'High Street Kensington', book: { label: '官網訂票', url: 'https://www.hrp.org.uk/kensington-palace/visit/tickets-and-prices/' }, map: 'Kensington Palace, London' },
-        { time: '17:00', name: '最後採買・打包', en: 'Last Shopping & Packing', desc: '超市掃伴手禮（茶葉、餅乾、保養品），回家打包行李。明天中午前就要出門了。', duration: '2 小時', map: 'Marks and Spencer, Oxford Street, London' },
+        { time: '17:00', name: '🥩 Flat Iron Kensington・告別牛排', en: 'Flat Iron Steak', desc: '想吃的那家！招牌 flat iron 牛排 £14（200g，附沙拉與牛油爆米花），離場還送焦糖海鹽冰淇淋（給你冰淇淋刀造型代幣，當場吃或留著去別家分店都行）。⏰ 排 17:00 是刻意的：避開 19:00–21:00 尖峰、週三又是離峰日，幾乎不用等位。從肯辛頓宮走過來只要 6 分鐘。可線上訂位（免費），訂不到也不用慌——他們固定保留大量 walk-in 名額，現場留電話等通知就好，不必站著排隊。', price: '牛排 £14＋配菜約 £5，含飲料一人約 £25–30（另 12.5% 服務費）', hours: '週日–四 12:00–22:30', duration: '1.5 小時', tube: 'High Street Kensington', book: { label: 'Flat Iron 訂位', url: 'https://flatironsteak.co.uk/locations/kensington/' }, map: 'Flat Iron Kensington, 9 Young Street, London W8 5EH' },
+        { time: '18:45', name: '最後採買・打包', en: 'Last Shopping & Packing', desc: '超市掃伴手禮（茶葉、餅乾、保養品），回家打包行李。倫敦超市多開到 22:00–23:00，吃完再買時間很夠。明天中午前就要出門了。', duration: '2 小時', map: 'Marks and Spencer, Oxford Street, London' },
       ],
       rainNote: '雨天改全室內輕鬆版：',
       rainSpots: [
         { time: '10:00', name: '肯辛頓宮＋自然史補完', en: 'Kensington Palace', desc: '宮殿全室內；還沒逛夠的南肯辛頓博物館群也在附近。', price: '£24.7', duration: '3 小時', tube: 'High Street Kensington', map: 'Kensington Palace, London' },
         { time: '14:00', name: '利柏堤百貨＆攝政街室內採買', en: 'Liberty & Regent Street', desc: '室內購物補貨：茶葉、圍巾、伴手禮，順便打包前最後巡禮。', price: '免費入場', duration: '2.5 小時', tube: 'Oxford Circus', map: 'Liberty London' },
       ],
-      dayTips: ['行李秤一下：國泰「輕便 Light」票種托運通常僅 1 件 23kg——伴手禮買太多先上官網加購行李，比機場現場便宜', '液體（酒、醬料）記得放托運', '🎭 魅影最終備選場：今晚 19:30 可當「道別倫敦」壓軸（週三另有 14:30 午場），明天班機是晚上 20:15、看完隔天睡到自然醒也來得及'],
+      dayTips: ['行李秤一下：國泰「輕便 Light」票種托運通常僅 1 件 23kg——伴手禮買太多先上官網加購行李，比機場現場便宜', '液體（酒、醬料）記得放托運', '🎭 魅影最終備選場：今晚 19:30 可當「道別倫敦」壓軸（週三另有 14:30 午場），明天班機是晚上 20:15、看完隔天睡到自然醒也來得及。真要看的話順序改成：肯辛頓宮 → 17:00 牛排 → 18:30 出發進西區 → 19:30 開演，打包挪到散場後或明早', '🥩 Flat Iron 為什麼排今天：① 就在肯辛頓宮旁邊（走 6 分鐘）② 週三離峰、17:00 又在尖峰前，等位機率最低 ③ 朋友今天雙場上班，單人用餐反而最快有位 ④ 這是回程前最後一個完整的晚上。想提前吃的備案是 9/10（四，牛津回來後晚上全空）', '🥩 訂位建議：官網選 Kensington 分店線上訂免費、兩分鐘搞定。訂不到別緊張——Flat Iron 一向保留大量 walk-in 名額，現場報名字留電話、他們有位就通知，不用站著排。真正要避開的是週五、週六晚上'],
     },
     {
       id: 'd13', date: '9/17', weekday: '週四', title: '道別倫敦 → 台北（晚班機，最後一天很完整）',
