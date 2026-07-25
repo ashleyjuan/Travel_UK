@@ -174,9 +174,9 @@ window.TRIP = {
       stay: 'Fulham 第 3 晚（今天不用換宿，行李都在 Fulham）。影城日輕鬆，晚上跟朋友吃完 Sunday Roast 後回 Fulham。',
       transport: 'Euston → Watford Junction 火車（直達 20 分鐘，£13.4，可感應付款）→ 官方接駁巴士 15 分鐘（出示影城門票免費搭）。本日交通費約 £20–32（影城火車來回＋市區地鐵）。',
       spots: [
-        { time: '09:00', name: '火車前往 Watford Junction', en: 'Euston → Watford Junction', desc: '車站外跟著指標搭哈利波特彩繪接駁車，每 30 分鐘一班。', price: '火車 £13.4 + 接駁免費', duration: '40 分鐘', map: 'Watford Junction Station' },
-        { time: '10:30', name: '華納兄弟哈利波特影城', en: 'Warner Bros. Studio Tour', desc: '原版拍攝場景：大餐廳、斜角巷、9¾ 月台、禁忌森林、霍格華茲城堡模型。奶油啤酒必喝！⚠️ 不售現場票，9 月場次常提前 6–8 週售罄——現在就要訂！DIY（火車+門票約 £75）比含車套裝（KKday NT$4,852）省近四成。', price: '門票 £58.5 起', hours: '全程約 4–5 小時', duration: '4.5 小時', book: { label: '官網訂票（快售罄）', url: 'https://www.wbstudiotour.co.uk/tickets/' }, map: 'Warner Bros. Studio Tour London' },
-        { time: '16:00', name: '回程進市區', en: 'Return', desc: '搭接駁＋火車回 Euston，順路回家放戰利品。', duration: '1 小時', map: 'Euston Station, London' },
+        { time: '08:30', name: '火車前往 Watford Junction', en: 'Euston → Watford Junction', desc: '08:30 從 Euston 出發、08:50 到站，車站外跟著指標搭哈利波特彩繪接駁車（每 30 分鐘一班），約 09:10–09:20 抵達影城——比入場時間早 40 分鐘，先過安檢、寄物、拍門口巫師棋雕像。', price: '火車 £13.4 + 接駁免費', duration: '40 分鐘', map: 'Watford Junction Station' },
+        { time: '10:00', name: '華納兄弟哈利波特影城', en: 'Warner Bros. Studio Tour', desc: '原版拍攝場景：大餐廳、斜角巷、9¾ 月台、禁忌森林、霍格華茲城堡模型。奶油啤酒必喝！⚠️ 不售現場票，9 月場次常提前 6–8 週售罄——現在就要訂！DIY（火車+門票約 £75）比含車套裝（KKday NT$4,852）省近四成。', price: '門票 £58.5 起', hours: '全程約 4–5 小時', duration: '4.5 小時', book: { label: '官網訂票（快售罄）', url: 'https://www.wbstudiotour.co.uk/tickets/' }, map: 'Warner Bros. Studio Tour London' },
+        { time: '15:30', name: '回程進市區', en: 'Return', desc: '約 14:30–15:00 逛完（含紀念品店），搭接駁＋火車回 Euston，順路回家放戰利品，時間更寬裕。', duration: '1 小時', map: 'Euston Station, London' },
         { time: '18:00', name: '週日烤肉晚餐（與朋友）', en: 'Sunday Roast Together', desc: '朋友 17:00 下班，一起吃英國週日傳統大餐：約克夏布丁＋烤牛肉＋肉汁。Hawksmoor 是名店（建議訂位），或讓朋友帶路去他愛的 gastropub。', price: '£25–40／人', duration: '2 小時', book: { label: 'Hawksmoor 訂位', url: 'https://thehawksmoor.com' }, map: 'Hawksmoor Seven Dials, London' },
       ],
       rainNote: '影城全室內不受影響；回程若下雨，晚餐前的空檔改逛室內的 St Pancras 車站建築與 Coal Drops Yard。',
