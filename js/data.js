@@ -178,7 +178,7 @@ window.TRIP = {
       spots: [
         { time: '07:10', name: 'Fulham 出門 → Euston', en: 'Fulham → Euston', desc: 'District 線到 Victoria 轉 Victoria 線，07:55 前抵達 Euston。週日早班車較疏，別拖到 07:20 後出門。', duration: '45 分鐘', tube: 'Fulham Broadway', map: 'Euston Station, London' },
         { time: '08:00', name: '火車前往 Watford Junction', en: 'Euston → Watford Junction', desc: '08:00 出發、08:20 到站，車站外跟著指標搭哈利波特彩繪接駁車（每 30 分鐘一班），約 08:50 抵達影城——比入場早 40 分鐘，從容過安檢、寄物、拍門口巫師棋雕像。', price: '火車 £13.4 + 接駁免費', duration: '40 分鐘', map: 'Watford Junction Station' },
-        { time: '09:30', name: '華納兄弟哈利波特影城 ✅ 已訂 09:30 場', en: 'Warner Bros. Studio Tour', desc: '原版拍攝場景：大餐廳、斜角巷、9¾ 月台、禁忌森林、霍格華茲城堡模型。奶油啤酒必喝！早場紅利：第一批進場拍大餐廳幾乎沒人。門票已訂（09:30 入場），出示 QR code 即可。', price: '門票已購 ✅', hours: '全程約 4–5 小時', duration: '4.5 小時', map: 'Warner Bros. Studio Tour London' },
+        { time: '09:30', name: '華納兄弟哈利波特影城 ✅ 已訂 09:30 場', en: 'Warner Bros. Studio Tour', desc: '原版拍攝場景：大餐廳、斜角巷、9¾ 月台、禁忌森林、霍格華茲城堡模型。奶油啤酒必喝！早場紅利：第一批進場拍大餐廳幾乎沒人。門票已訂（09:30 入場），出示 QR code 即可。⚠️ 官方規定至少提早 20 分鐘到場——本行程 08:50 抵達（提早 40 分），就算錯過一班接駁車（08:50→09:20 到）也仍壓線符合。', price: '門票已購 ✅', hours: '全程約 4–5 小時', duration: '4.5 小時', map: 'Warner Bros. Studio Tour London' },
         { time: '14:30', name: '回程進市區・回 Fulham 小歇', en: 'Return & Rest', desc: '約 14:00–14:30 逛完（含紀念品店），搭接駁＋火車回 Euston，再回 Fulham 放戰利品、休息一下——晚上聚餐前有整整兩小時緩衝。', duration: '1.5 小時', map: 'Euston Station, London' },
         { time: '18:00', name: '週日烤肉晚餐（與朋友）', en: 'Sunday Roast Together', desc: '朋友 17:00 下班，一起吃英國週日傳統大餐：約克夏布丁＋烤牛肉＋肉汁。Hawksmoor 是名店（建議訂位），或讓朋友帶路去他愛的 gastropub。', price: '£25–40／人', duration: '2 小時', book: { label: 'Hawksmoor 訂位', url: 'https://thehawksmoor.com' }, map: 'Hawksmoor Seven Dials, London' },
       ],
