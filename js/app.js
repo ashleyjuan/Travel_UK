@@ -24,6 +24,7 @@
       '<div class="spot-body">' +
         '<h4>' + s.name + (s.en ? ' <span class="en">' + s.en + '</span>' : '') + '</h4>' +
         '<p>' + s.desc + '</p>' +
+        (s.warn ? '<div class="spot-warn"><strong>⚠️ 注意事項</strong><ul>' + s.warn.map(function (w) { return '<li>' + w + '</li>'; }).join('') + '</ul></div>' : '') +
         (s.tips ? '<p class="spot-tip">💡 ' + s.tips + '</p>' : '') +
         (meta.length ? '<div class="spot-meta">' + meta.join('') + '</div>' : '') +
         (links.length ? '<div class="spot-links">' + links.join('') + '</div>' : '') +
