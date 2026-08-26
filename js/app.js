@@ -128,10 +128,13 @@
     'Wallace Collection, London': [51.5173, -0.1531]
   };
 
+  // 手機用 citymapper:// 直接喚起 app（網頁連結在手機常只開瀏覽器版）；電腦用網頁版
+  var CM_MOBILE = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
   function citymapperUrl(dest) {
     var c = CM_COORDS[dest];
     if (!c) return null;
-    return 'https://citymapper.com/directions?endcoord=' + c[0] + '%2C' + c[1] + '&endname=' + encodeURIComponent(dest);
+    var q = 'endcoord=' + c[0] + '%2C' + c[1] + '&endname=' + encodeURIComponent(dest);
+    return (CM_MOBILE ? 'citymapper://directions?' : 'https://citymapper.com/directions?') + q;
   }
 
   // ---------- 景點卡片 ----------
