@@ -200,6 +200,7 @@ th { background: #f2ede1; color: var(--navy); white-space: nowrap; }
 }
 .btn-map { background: var(--navy); color: #fff; }
 .btn-book { background: #fff; color: var(--red); border: 1.5px solid var(--red); }
+.btn-cm { background: #2fa940; color: #fff; }
 
 /* Day tips */
 .day-tips {
