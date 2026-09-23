@@ -45,6 +45,7 @@
     'Liberty London, Regent Street': [51.5140, -0.1400],
     'Liberty London': [51.5140, -0.1400],
     'London Eye, South Bank, London': [51.5033, -0.1196],
+    "McDonald's King's Cross, London": [51.5309, -0.1214],
     'London Marylebone Station': [51.5225, -0.1631],
     'Lyceum Theatre, Wellington Street, London': [51.5116, -0.1198],
     'Magdalen Bridge Boathouse, Oxford': [51.7500, -1.2467],
