@@ -275,3 +275,79 @@ window.TRIP = {
     },
   ],
 };
+
+// 2026/9/8 與 2026/9/11 更新版行程
+window.TRIP.days = window.TRIP.days.map(function (day) {
+  if (day.id === 'd4') {
+    return {
+      id: 'd4', date: '9/8', weekday: '週二', title: 'London Eye・Big Ben・Westminster Abbey・Kensington・歌劇魅影',
+      theme: '🎡 WESTMINSTER MORNING',
+      friend: '下午 14:00 左右在 High Street Kensington 跟朋友會合，晚上前往劇院看《歌劇魅影》。',
+      stay: '住朋友家第 4 晚。',
+      transport: '🏠 從朋友家（NW3・Adelaide Road 一帶）出發：建議往 Swiss Cottage 搭 Jubilee line 往 Waterloo，先到 London Eye，再過 Westminster Bridge、Big Ben，10:40 抵達西敏寺。下午 District line 往 High Street Kensington，晚上前往 West End。',
+      spots: [
+        { time: '08:40', name: '🏠 從朋友家出發', en: 'Adelaide Road / NW3', desc: '從 Adelaide Road / NW3 一帶出門，建議往 Swiss Cottage 搭 Jubilee line 往 Waterloo；全程抓約 40–50 分鐘，保留轉乘與步行緩衝。', duration: '40–50 分鐘', tube: 'Swiss Cottage', map: 'London Eye, South Bank, London' },
+        { time: '09:30', name: '🎡 London Eye 外觀', en: 'London Eye', desc: '不搭摩天輪，只在 South Bank / Jubilee Gardens 一帶看景與拍照，抓 15–20 分鐘即可。', price: '免費（外觀）', duration: '15–20 分鐘', tube: 'Waterloo', map: 'London Eye, South Bank, London' },
+        { time: '09:50', name: '🌉 Westminster Bridge → Big Ben', en: 'Westminster Bridge & Big Ben', desc: '從 London Eye 沿河走上 Westminster Bridge，過橋途中拍 Big Ben 與 Palace of Westminster；慢慢走加拍照抓約 25–30 分鐘。', price: '免費（外觀）', duration: '25–30 分鐘', map: 'Big Ben, London' },
+        { time: '10:20', name: '🕰️ Big Ben・Parliament Square', en: 'Big Ben & Parliament Square', desc: '不登塔，只看外觀。拍完後往 Parliament Square 穿過去就是 Westminster Abbey。', price: '免費（外觀）', duration: '20 分鐘', map: 'Big Ben, London' },
+        { time: '10:40', name: '🎟️ Westminster Abbey 報到／安檢', en: 'Westminster Abbey Entry', desc: '票是 11:00–11:30 入場窗。10:40 左右到入口最穩，不要把 11:00 當抵達時間。', tube: 'Westminster', map: 'Westminster Abbey, London' },
+        { time: '11:00', name: '⛪ Westminster Abbey＋Queen’s Diamond Jubilee Galleries', en: 'Westminster Abbey & Galleries', desc: '一般入場 £31＋Galleries £5；Galleries 位於 Abbey 上方的 medieval triforium，不需要離開西敏寺再去別處。整體抓約 2–2.5 小時。', price: '£31＋£5', hours: '11:00–11:30 入場窗', duration: '2–2.5 小時', tube: 'Westminster', book: { label: 'Galleries 官方資訊', url: 'https://www.westminster-abbey.org/visit-us/the-queens-diamond-jubilee-galleries/' }, map: 'Westminster Abbey, London' },
+        { time: '13:15', name: '離開西敏寺 → High Street Kensington', en: 'Westminster Abbey → Kensington', desc: '若 13:00 左右看完就提早走；若逛到 13:30 也沒關係。從 Westminster 搭 District line 往 High Street Kensington。', duration: '約 30 分鐘', tube: 'Westminster', map: 'Kensington Palace, London' },
+        { time: '14:00', name: '🫖 跟朋友會合・The Muffin Man Tea Shop', en: 'The Muffin Man Tea Shop', desc: '建議把朋友會合時間抓在 14:00 左右，比較不會為了西敏寺趕場，下午以聊天為主。', tube: 'High Street Kensington', map: 'Kensington Palace, London' },
+        { time: '15:30', name: '🌳 Kensington / Hyde Park 自由散步', en: 'Kensington Gardens / Hyde Park', desc: '視聊天時間決定要不要走 Kensington Gardens；不設硬性景點。', price: '免費', duration: '彈性', map: 'Kensington Palace, London' },
+        { time: '17:30', name: '前往 West End・晚餐', en: 'Kensington → West End', desc: '開始往劇院方向移動，留足吃飯與交通時間。', duration: '約 40 分鐘', map: 'His Majesty\'s Theatre, Haymarket, London' },
+        { time: '18:50', name: '🎭 His Majesty’s Theatre', en: 'His Majesty’s Theatre', desc: '提早抵達、開好 e-ticket。', tube: 'Piccadilly Circus', map: 'His Majesty\'s Theatre, Haymarket, London' },
+        { time: '19:30', name: '🎭 The Phantom of the Opera', en: 'The Phantom of the Opera', desc: '看完直接回朋友家。', price: '£25（已付 ✅）', hours: '19:30 開演，全長約 2.5 小時', tube: 'Piccadilly Circus', book: { label: '官網訂單查詢', url: 'https://uk.thephantomoftheopera.com/tickets' }, map: 'His Majesty\'s Theatre, Haymarket, London' },
+      ],
+      rainNote: '若早上雨大：London Eye 縮成 5–10 分鐘外觀照，直接走 Westminster Bridge → Big Ben → Abbey。西敏寺與 Galleries 都是室內主行程，不動。',
+      rainSpots: [
+        { time: '10:40', name: 'Westminster Abbey＋Galleries', en: 'Westminster Abbey & Galleries', desc: '直接往 Abbey 入口，照原本 11:00–11:30 入場窗；全程室內。', duration: '2–2.5 小時', tube: 'Westminster', map: 'Westminster Abbey, London' },
+        { time: '13:30', name: 'Churchill War Rooms（可選）', en: 'Churchill War Rooms', desc: '如果想增加室內景點，可在 Westminster 區加看邱吉爾戰時密室；若時間緊就直接前往 Kensington。', price: '約 £32（線上）', duration: '1.5–2 小時', tube: 'Westminster', book: { label: '官網資訊', url: 'https://www.iwm.org.uk/visits/churchill-war-rooms' }, map: 'Churchill War Rooms, London' },
+        { time: '14:00', name: 'Kensington 室內會合', en: 'The Muffin Man Tea Shop', desc: '雨天取消戶外散步，保留與朋友喝茶聊天。', tube: 'High Street Kensington', map: 'Kensington Palace, London' },
+      ],
+      altNote: '如果 09:30 才離開朋友家：不要取消西敏寺，直接 Jubilee line 到 Westminster，先拍 Big Ben，再 10:40 排 Abbey；London Eye 改成過橋遠看即可。',
+      altSpots: [
+        { time: '09:30', name: '直接前往 Westminster', en: 'Swiss Cottage → Westminster', desc: '把 London Eye 改成過橋遠看，優先確保 10:40 抵達 Abbey。', tube: 'Westminster', map: 'Westminster Abbey, London' },
+        { time: '11:00', name: 'Westminster Abbey＋Galleries', en: 'Westminster Abbey & Galleries', desc: '照原本入場窗參觀，下午再前往 Kensington 會合朋友。', duration: '2–2.5 小時', map: 'Westminster Abbey, London' },
+      ],
+      dayTips: ['🎟️ Westminster Abbey 與 Queen’s Diamond Jubilee Galleries 都是 11:00–11:30 的票；Galleries 在 Abbey 裡面。', '10:40 無論拍到哪裡都要往 Abbey 入口走。', '🎭 Phantom e-ticket 先存手機並截圖備份，19:00 前抵達劇院。'],
+    };
+  }
+  if (day.id === 'd7') {
+    return {
+      id: 'd7', date: '9/11', weekday: '週五', title: 'Buckingham Palace・National Gallery・回朋友家拿行李・15:00 Fulham',
+      theme: '💂 ROYAL + GALLERY',
+      friend: '早上完全不搬行李；看完白金漢宮衛兵交接與 National Gallery 後，回 NW3 拿 28 吋行李，再搬去 Fulham。晚上 Bancone 後看朋友演出。',
+      stay: 'Fulham 第 1 晚。15:00 起入住，先確認可否提前寄放；早上行李留在朋友家。',
+      transport: '🏠 朋友家（NW3）→ Buckingham Palace：Swiss Cottage 搭 Jubilee line 到 Green Park，再步行。交接後沿 The Mall 走到 Trafalgar Square 的 National Gallery；看完直接回 NW3 拿行李，再前往 12 Halford Road, London SW6 1JT，15:00 左右入住 Fulham。',
+      spots: [
+        { time: '09:15', name: '🏠 從朋友家出發・行李留在家', en: 'Adelaide Road / NW3 → Buckingham Palace', desc: '目標約 10:00 抵達白金漢宮，留時間找觀看位置。', tube: 'Green Park', map: 'Buckingham Palace, London' },
+        { time: '10:00', name: '👑 Buckingham Palace 卡位', en: 'Buckingham Palace', desc: '先找好位置，不再安排早上的其他景點；人潮會很密。', price: '免費（外觀）', duration: '1 小時', map: 'Buckingham Palace, London' },
+        { time: '11:00', name: '💂 Changing of the Guard', en: 'Changing of the Guard', desc: '官方 2026/9/11 排程為 Buckingham Palace 11:00 Guard Change，儀式及部隊移動仍可能因軍方或天候臨時調整。', price: '免費', hours: '11:00 開始，約 45 分鐘', duration: '1–1.5 小時', book: { label: '官方排程', url: 'https://www.householddivision.org.uk/index.php?action=changing-the-guard-calendar' }, map: 'Buckingham Palace, London' },
+        { time: '11:50', name: '🌳 The Mall → Trafalgar Square', en: 'Buckingham Palace → National Gallery', desc: '交接結束後沿 The Mall 往 Trafalgar Square，途中可看 St James’s Park 與 Admiralty Arch。', duration: '15–20 分鐘', map: 'National Gallery, London' },
+        { time: '12:15', name: '🖼️ National Gallery 國家美術館', en: 'National Gallery', desc: '先看完再回朋友家；建議抓約 1 小時 15 分鐘，鎖定必看作品，不做全館深度逛。常設展一般免費。', price: '免費', duration: '1 小時 15 分鐘', book: { label: '官方資訊', url: 'https://www.nationalgallery.org.uk/visiting/plan-your-visit' }, map: 'National Gallery, London' },
+        { time: '13:30', name: '🚇 National Gallery → 朋友家', en: 'National Gallery → Chalk Farm', desc: '離館後直接回 NW3，從 Trafalgar Square 走到 Charing Cross，Northern line 往 Chalk Farm，再步行回 Adelaide Road 一帶；目標 14:05–14:15 到家。', duration: '約 35–45 分鐘', map: 'Chalk Farm Station, London' },
+        { time: '14:10', name: '🧳 回朋友家拿 28 吋行李', en: 'Collect Luggage', desc: '抓 10–15 分鐘拿行李、確認東西沒有遺漏，約 14:20–14:25 再出門。午餐以快速解決為主。', duration: '10–15 分鐘', map: 'Chalk Farm Station, London' },
+        { time: '14:25', name: '朋友家 → Fulham 公寓', en: 'NW3 → Fulham', desc: '帶 28 吋行李移動，目的地為 12 Halford Road, London SW6 1JT；Citymapper 依當下班次選最佳方案。', duration: '約 35–45 分鐘', map: '12 Halford Road, London SW6 1JT' },
+        { time: '15:00', name: '🏠 Fulham Check-in', en: 'Fulham Check-in', desc: '這時才正式搬行李；進房、放行李、稍微休息，不需要早上寄放。', tube: 'Fulham Broadway', map: '12 Halford Road, London SW6 1JT' },
+        { time: '16:45', name: '從 Fulham 前往 Covent Garden', en: 'Fulham → Bancone', desc: 'National Gallery 已經看完，check-in 後直接往晚餐與劇院區。', duration: '約 35–45 分鐘', map: 'Bancone, 39 William IV Street, Covent Garden, London' },
+        { time: '18:00', name: '🍝 Bancone Covent Garden', en: 'Bancone Covent Garden', desc: '照原行程晚餐；之後去看朋友演出。', price: '£15–25／人', duration: '1 小時', book: { label: 'Bancone 訂位', url: 'https://www.bancone.co.uk' }, map: 'Bancone, 39 William IV Street, Covent Garden, London' },
+        { time: '晚上', name: '🎭 朋友演出', en: 'Friend’s Show', desc: '依實際演出地點與 call time 前往。', duration: '依演出安排' },
+      ],
+      rainNote: 'Guard Change 是否照常以 Household Division 當天公告為準。若取消：白金漢宮外觀拍照後約 10:45–11:00 就往 National Gallery；看完仍回朋友家拿行李。',
+      rainSpots: [
+        { time: '10:00', name: 'Buckingham Palace 外觀', en: 'Buckingham Palace', desc: '若雨勢大或 Guard Change 取消，縮短戶外停留。', duration: '30–45 分鐘', map: 'Buckingham Palace, London' },
+        { time: '10:45', name: 'National Gallery', en: 'National Gallery', desc: '提早進室內看展，可拉長到 1.5–2 小時，但仍要以 13:30 左右離館、回 NW3 拿行李為目標。', price: '免費', duration: '1.5–2 小時', book: { label: '官方資訊', url: 'https://www.nationalgallery.org.uk/visiting/plan-your-visit' }, map: 'National Gallery, London' },
+        { time: '14:10', name: '回朋友家拿行李 → Fulham', en: 'NW3 → Fulham', desc: '雨天仍維持 15:00 左右 Fulham check-in；行李不要帶去早上的市中心行程。', map: '12 Halford Road, London SW6 1JT' },
+      ],
+      altNote: '如果 Guard Change 人潮散得很慢，12:10 前離開 Buckingham Palace 區域；National Gallery 最晚 13:30 離館。如果更在意美術館，可看到 14:00，但 15:00 準時 check-in 就難保證。',
+      altSpots: [
+        { time: '12:10', name: '提早離開白金漢宮', en: 'Leave Buckingham Palace', desc: '不等待人潮完全散去，直接沿 The Mall 前往 National Gallery。', map: 'National Gallery, London' },
+        { time: '12:30', name: 'National Gallery 精華版', en: 'National Gallery', desc: '縮短至 45–60 分鐘，13:30 最晚離館，保住回 NW3 拿行李的時間。', duration: '45–60 分鐘', map: 'National Gallery, London' },
+        { time: '14:10', name: '拿行李後直接前往 Fulham', en: 'NW3 → Fulham', desc: '抵達 Fulham 可能延至 15:30；若住宿允許，放寬入住時間。', map: '12 Halford Road, London SW6 1JT' },
+      ],
+      dayTips: ['💂 9/11 官方排程確認 Buckingham Palace 11:00 Guard Change，但仍以當天公告為準。', '🖼️ National Gallery 放在衛兵交接後，13:30 一定要離館。', '🧳 行李整個上午留朋友家，約 14:10 回去拿，15:00 左右前往／抵達 Fulham。', '🍝 Bancone 建議提前線上訂位；晚上再依朋友演出地點與 call time 前往。'],
+    };
+  }
+  return day;
+});
